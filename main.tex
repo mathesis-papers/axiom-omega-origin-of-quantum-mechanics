@@ -4215,7 +4215,7 @@ $d$ by $c$, and take $j=1,2,3$. The maximum rank of
 $\sum_j M_j\otimes N_j$ is at most $\min(3ac,ad,bc)$.
 In the positive range $a\le b$, $c\le d$,
 $a^2+b^2\le3ab$ and $c^2+d^2\le3cd$, equality with $\min(ad,bc)$
-is claimed in \cite{obr:leanbridge} (Remark~\ref{ub:bridge}); it is cited, unrefereed, and not proved or checked here. The upper bound follows from the input and
+is proved in the companion \cite[Thm.~16.19]{PaperI} (Remark~\ref{ub:bridge}; an independent verification of that proof is in progress; also stated in \cite{obr:leanbridge}); it is cited here. The upper bound follows from the input and
 output dimensions and the factorization of each summand through
 $\C^{ac}$ via $(I_a\otimes N_j)(M_j\otimes I_c)$.
 The cone inequalities imply $b<3a$ and $d<3c$, so the exterior
@@ -8459,7 +8459,7 @@ Hypothesis~Br(iv), the exact SI values of $2\pi\hbar$ and $e$ give $2\pi\hbar/(2
 
 \begin{proposition}[volume, orientation and the paravector forms]\label{n12:exterior}
 Let $V=\R^3$ be oriented Euclidean, with exterior dimensions $1,3,3,1$ and Hodge isometries as in
-\cite[Thm.~13.19]{PaperI}.  The star exchanges $1$ and the oriented volume element; both span trivial $\SO(3)$
+\cite[Thm.~13.20]{PaperI}.  The star exchanges $1$ and the oriented volume element; both span trivial $\SO(3)$
 representations, and an orientation-reversing orthogonal map fixes $1$ and negates the volume element.  In
 $\mathrm{Cl}(3,0)$ the volume element $I_3=e_1e_2e_3$ is central and $I_3^2=-1$.  For the paravector $p=t+x$, $x\in V$,
 Clifford conjugation gives $\bar p=t-x$ and $p\bar p=t^2-\lvert x\rvert^2$; the coefficient norm on the same space is $t^2+\lvert x\rvert^2$.
@@ -8490,11 +8490,11 @@ $\Delta=(5+i\sqrt2)/8$; a reflection gives $(5-i\sqrt2)/8$.
 
 \begin{remark}[selection of signature and clock]\label{n12:clockmodel}
 The paravector form $p\bar p=t^2-\lvert x\rvert^2$ is the determinant of the Hermitian matrix $t+x\cdot\sigma$, preserved by
-$X\mapsto gXg^\dagger$, $g\in\SL(2,\C)$, which gives $\mathrm{Spin}^+(1,3)$ \cite[Prop.~10.10, Rem.~13.22]{PaperI}; this is the Lorentz
+$X\mapsto gXg^\dagger$, $g\in\SL(2,\C)$, which gives $\mathrm{Spin}^+(1,3)$ \cite[Prop.~10.10, Rem.~13.23]{PaperI}; this is the Lorentz
 geometry of the indefinite comparisons of \cite[Sec.~10]{PaperI}.  The coefficient norm $t^2+\lvert x\rvert^2=\tfrac12\tr(pp^\dagger)$ is
 the determinant of the quaternion $t-i\,x\cdot\sigma$ and is preserved by $\SO(4)$, acting by $q\mapsto aqb^\dagger$ with
-$a,b\in\SU(2)$ \cite[Prop.~13.21]{PaperI}.  Selecting the first form, a future direction and a limiting
-speed are the physical inputs of \cite[Hyp.~A.3]{PaperI}.  With $t=c\,t_{\mathrm{lab}}$ on a future timelike curve and
+$a,b\in\SU(2)$ \cite[Prop.~13.22]{PaperI}.  Selecting the first form, a future direction and a limiting
+speed are the physical inputs of \cite[Hyp.~A.5]{PaperI}.  With $t=c\,t_{\mathrm{lab}}$ on a future timelike curve and
 $w=\lvert dx\rvert/(c\,dt_{\mathrm{lab}})$, division of the interval by $c^2dt_{\mathrm{lab}}^2$ gives $d\tau/dt_{\mathrm{lab}}=\sqrt{1-w^2}=1/\gamma$: the
 values $1,\tfrac35,0$ at $w=0,\tfrac45$ and in the null limit, with rapidity $\operatorname{artanh}\tfrac45=\log3$.  A derivation of the
 clock from a spatial path integral, or a reading of $1-w^2$ as a resting standing-wave fraction, would need a
@@ -8508,7 +8508,7 @@ algebra $\mathrm{Cl}(3,0)$ with the same $I_3$ carries both forms of Proposition
 $\SO(4)$ of $t^2+\lvert x\rvert^2$ contains no boosts.  \emph{Corrected statement.}  Clifford conjugation defines the indefinite
 form, whose symmetry group is the Lorentz group (Remark~\ref{n12:clockmodel}); choosing it and calibrating a clock
 are inputs.  In four dimensions the unit pseudoscalar of a given form squares to $-1$ in signatures $(1,3)$ and
-$(3,1)$ and to $+1$ in $(4,0)$ and $(2,2)$, matching $*^2=-1$ and $*^2=+1$ on two-forms \cite[Prop.~13.21]{PaperI}; this sign
+$(3,1)$ and to $+1$ in $(4,0)$ and $(2,2)$, matching $*^2=-1$ and $*^2=+1$ on two-forms \cite[Prop.~13.22]{PaperI}; this sign
 is computed from a four-dimensional form already given.
 \end{remark}
 
@@ -8619,7 +8619,7 @@ Bargmann phase of its vertices is $\arg\Delta=\Omega_\triangle/2$.  Moreover
 $\log C=\theta^2[\tfrac12e_1,\tfrac12e_2]+O(\theta^3)$, and at $\theta=\pi/2$: $(\vartheta,\varrho,\Omega_\triangle)=(\pi/3,2\pi/3,\pi/2)$.
 \end{proposition}
 \begin{proof}
-As unit quaternions (convention $ij=k$ of \cite[Ex.~13.17]{PaperI}) the gates are $\cos\frac\theta2+\sin\frac\theta2\,i$ and
+As unit quaternions (convention $ij=k$ of \cite[Ex.~13.18]{PaperI}) the gates are $\cos\frac\theta2+\sin\frac\theta2\,i$ and
 $\cos\frac\theta2+\sin\frac\theta2\,j$.  $C=(U_2U_1)^{-1}(U_1U_2)$, and the two products have coordinates
 $(\cos^2\frac\theta2,\cos\frac\theta2\sin\frac\theta2,\cos\frac\theta2\sin\frac\theta2,\pm\sin^2\frac\theta2)$, with scalar pairing $1-2\sin^4\frac\theta2$.  Since
 $\cos\vartheta=1-2\sin^2(\vartheta/2)$, $\vartheta=2\arcsin(\sin^2\frac\theta2)\in[0,\pi/3]$, and $\varrho=2\vartheta\le2\pi/3$ is the principal angle.  For the
@@ -8710,7 +8710,7 @@ continuous unitary path requires an interpolation choice.
 \begin{remark}[refuted: the circle double cover closes the tower]\label{n12:ref-cover}
 \emph{Claim.}  The circle double cover is a M\"obius bundle and establishes closure of $L_0$--$L_5$.  \emph{Counterexample.}
 The connected double cover of the circle has total space a circle; the $2\pi$ sheet change and $4\pi$ return of the
-spinor lift are \cite[Ex.~13.17]{PaperI}.  \emph{Corrected statement.}  The M\"obius line bundle is the bundle associated with
+spinor lift are \cite[Ex.~13.18]{PaperI}.  \emph{Corrected statement.}  The M\"obius line bundle is the bundle associated with
 the double cover through the sign representation of $\Z_2$ on $\R$, an additional choice; closure of the tower needs a
 map of states from $L_5$ to $L_0$, which the cover does not supply.
 \end{remark}
@@ -14125,9 +14125,11 @@ orthogonal and no product vector of $(\C^2)^{\otimes3}$ is orthogonal to all of 
 
 %=====================================================================================
 \section{Tensor-network results used for cap entropies}\label{app:tensor}
-\noindent\emph{Status.}  The equalities and existence statements of this appendix that are attributed to the Lean
-development \cite{ub:lean,obr:leanbridge} are cited (unrefereed) and are not proved or checked here; the upper bounds,
-the counterexamples and the arguments written out in full are proved here and checked numerically.  The cut bound
+\noindent\emph{Status.}  The ordered-cone attainment, the scalar column Gram and the flat-spectrum obstruction are proved
+in the companion \cite[Thm.~16.19, Thm.~16.20, Prop.~16.22]{PaperI}; an independent verification of those proofs is in
+progress.  The matrix-product-state recovery statements remain library statements of \cite{ub:lean} and are cited
+(unrefereed), not proved or checked here.  The upper bounds, the counterexamples and the arguments written out in full
+are proved here and checked numerically.  The cut bound
 and its equality criterion are Theorem~\ref{ub:cut}.
 
 \begin{remark}[Width-three bridge rank theorem]\label{ub:bridge}
@@ -14145,18 +14147,17 @@ $ad$ and $bc$, so $Q_{\max}\le Q_{\min}$. For
  0<a\le b,\quad 0<c\le d,\qquad
  a^2+b^2\le3ab,\quad c^2+d^2\le3cd
 \]
-the Lean development \cite{ub:lean} states $Q_{\max}=Q_{\min}=\min(ad,bc)$; this
-equality is cited, unrefereed, and not proved or checked here.
+the companion proves $Q_{\max}=Q_{\min}=\min(ad,bc)$ \cite[Thm.~16.19]{PaperI} (an independent verification of that
+proof is in progress; the same statement is in the Lean library \cite{ub:lean}).  The equality is cited here.
 Under these cone conditions $b<3a$ and $d<3c$. The claimed reverse
 rank bound is the ordered
 width-three case of a bridge conjecture of Gesmundo, Lysikov and
-Steffan \cite{ub:gls}. According to the cited source, the proof uses rational witnesses
+Steffan \cite{ub:gls}. The companion's proof uses rational witnesses
 in the square and mixed regions and a base witness when both
 ratios lie in $(1,2)$. The case of both ratios at least two uses
 the smaller ordered tuple $(3a-b,a,3c-d,c)$ and preservation of the
 rank deficit under castling. The quadratic expressions are invariant
-under these replacements, and $a+c<b+d$. The declarations are listed
-in \cite{ub:lean}.  Only the rank appears in this equality.
+under these replacements, and $a+c<b+d$ \cite[Lemmas~16.10, 16.18, Cor.~16.13]{PaperI}.  Only the rank appears in this equality.
 \end{remark}
 
 \begin{example}[Cut facets and exact saturation]\label{ub:bridgeexamples}
@@ -14187,11 +14188,10 @@ attainable exactly when $2b\le3a$.
 For $2b\le3a$ and $3c\le2d$, each $\lambda>0$ is realised by a
 native $F^\dagger F=\lambda I_{bc}$.
 Conversely $3a<2b$ and a positive scalar column Gram force
-$2c\le d$. These three statements are claimed (cited, unrefereed) as the declarations
-\texttt{NativeSaturation.native\_saturation\_iff},
-\texttt{NativeScalarGram.native\_scalar\_gram\_exists}, and
-\texttt{NativeRectangularBound.bound} in the bridge graph sources
-\cite{ub:lean}; the first two are not proved or checked here.  For the stronger bound below we give the argument: it uses a common neutral two-plane for
+$2c\le d$. These three statements are proved in the companion \cite[Thm.~16.20, Prop.~16.22]{PaperI} (an independent
+verification of those proofs is in progress) and are also library statements of \cite{ub:lean}
+(\texttt{NativeSaturation.native\_saturation\_iff}, \texttt{NativeScalarGram.native\_scalar\_gram\_exists},
+\texttt{NativeRectangularBound.bound}); they are cited here.  For the stronger bound below we give the argument: it uses a common neutral two-plane for
 the Hermitian coefficient kernel of the injectively stacked
 three independent left factors in the regime $3a<2b$. When
 $c>0$ and $b>2a$, one has the stronger $3c\le d$. In this last
