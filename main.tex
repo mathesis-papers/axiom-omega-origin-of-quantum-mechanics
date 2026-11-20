@@ -269,7 +269,7 @@ places them in the comparison field, where the clock quotient carries the Hopf c
 configuration and a dynamical connection or radius removes the topological protection.
 \emph{What is new}, in the scope of the literature we searched.  Part~I: the axiom and its classification
 (Paper~I), including the two-readout form of the round-trip law, proved there in a stronger form
-\cite[Thm.~4.5]{PaperI}, of which Theorem~\ref{thm:trd} is a second proof; the product-rule theorem
+\cite[Thm.~7.5]{PaperI}, of which Theorem~\ref{thm:trd} is a second proof; the product-rule theorem
 for maps on products of ray spaces without linearity or continuity (Theorem~\ref{thm:product});
 entanglement from closure of states under round-trip reflections (Theorem~\ref{thm:comp}); the
 classification of readings over all closed subgroups of $\SU(2)$ acting on the comparison sphere
@@ -426,7 +426,7 @@ $w,x\in M$.
 \end{definition}
 Law $(\Omega2\mathrm d)$ says that an elementary alternative is binary.  Earlier versions of the axiom
 added a clause $(\Omega2\mathrm e)$, that $\kappa$ is $C^2$ near the diagonal; it is redundant
-\cite[Thm.~3.11]{PaperI}.  By $(\Omega2\mathrm c)$,
+\cite[Thm.~6.11]{PaperI}.  By $(\Omega2\mathrm c)$,
 $\kappa(x,s_xw)=\kappa(w,x)$, so $(\Omega3)$ says $\kappa(w,s_xw)=c(w,x)\,c(x,s_xw)$: the comparison of
 a point with its mirror image factorises through the mirror.
 
@@ -436,16 +436,16 @@ $\kappa(x,y)=\tfrac12(1+\re\bar xy)=\lVert\tfrac12(x+y)\rVert^2$.  Then $x^\perp
 $x\bar wx=2\ip{x}{w}x-w$ for the Euclidean inner product, $\kappa(w,s_xw)=\ip{x}{w}^2=c(w,x)^2$.
 \end{example}
 
-\begin{theorem}[classification {\cite[Thms.~3.1, 3.11]{PaperI}}]\label{thm:main}
+\begin{theorem}[classification {\cite[Thms.~6.1, 6.11]{PaperI}}]\label{thm:main}
 Every comparison structure is isomorphic to exactly one of the two structures of
 Example~\ref{ex:models}.  In particular $\dim M\in\{1,3\}$, $M$ is compact, $\kappa$ is positive
 semidefinite of rank $\dim M+2$, and the transport is noncommutative iff $M\cong S^3$.
 \end{theorem}
 
-\begin{proof}[Sketch, following {\cite[Thm.~3.11]{PaperI}}]
+\begin{proof}[Sketch, following {\cite[Thm.~6.11]{PaperI}}]
 Fix $o\in M$.  By Certaine \cite{Certaine}, $x\cdot y:=\hp{x}{o}{y}$ is a group law with unit $o$ and
 $\hp{x}{y}{z}=xy^{-1}z$; changing $o$ gives an isomorphic group.  A locally Euclidean topological group
-is a Lie group (Gleason--Montgomery--Zippin; see \cite[Lemma~2.2]{PaperI}).  Invariance under both transports makes
+is a Lie group (Gleason--Montgomery--Zippin; see \cite[Lemma~5.2]{PaperI}).  Invariance under both transports makes
 $\psi:=2\kappa(o,\cdot)-1$ a continuous symmetric class function with $\psi(g)=1$ only at $g=o$, and with
 $g=w^{-1}x$, $(\Omega3)$ reads $\psi(g^2)=2\psi(g)^2-1$.  (1) On a one-parameter subgroup, a continuous
 solution of the duplication formula with $\psi<1$ off $0$ cannot live on a line, so every one-parameter
@@ -457,27 +457,27 @@ diagonalisable with imaginary eigenvalues, and a Lie algebra with these two prop
 $\su(2)$, so $G\in\{S^1,\SU(2),\SO(3)\}$.  For $\SO(3)$, $\psi=\cos\alpha$ and $\kappa=\cos^2(\alpha/2)$ vanishes on a
 real projective plane, contradicting $(\Omega2\mathrm d)$; for $S^1$ and $\SU(2)$, $\psi=\re$, the comparison of
 Example~\ref{ex:models}.  Positive semidefiniteness follows from $\kappa(x,y)=\ip{\Phi(x)}{\Phi(y)}$ with
-$\Phi(x)=(1,x)/\sqrt2$; no regularity beyond continuity is used \cite[Thms.~3.1, 3.11]{PaperI}.  For $C^2$
+$\Phi(x)=(1,x)/\sqrt2$; no regularity beyond continuity is used \cite[Thms.~6.1, 6.11]{PaperI}.  For $C^2$
 pre-comparison structures with nondegenerate second-order form $h$ (and, for the first, $\kappa$ positive
 semidefinite with $\inf\kappa=0$), Paper~I also shows that two other closing laws (minimal dimension and
-rank; completeness of comparison) select $\su(2)$ \cite[Thms.~4.1, 4.2]{PaperI}.
+rank; completeness of comparison) select $\su(2)$ \cite[Thms.~7.1, 7.2]{PaperI}.
 \end{proof}
 The geometric conclusion needs no associativity.  By the roundness theorem of Paper~I
-\cite[Thm.~5.18, Cor.~5.19]{PaperI}, a connected manifold with a ternary operation satisfying the Mal'cev
+\cite[Thm.~8.18, Cor.~8.19]{PaperI}, a connected manifold with a ternary operation satisfying the Mal'cev
 identities $\hp aax=x$, $\hp axx=a$, continuous in its outer arguments, and a comparison with
 $(\Omega2\mathrm{a{-}d})$ and $(\Omega3)$, is the round $S^1$, $S^3$ or $S^7$ with $\kappa=\cos^2(d/2)$; no form of the third
 identity of $(\Omega1)$ is used.  In particular $c=2\kappa-1$ is positive semidefinite of rank $\dim M+1$, which
 gives the linear structure of Proposition~\ref{prop:linear} without the classification.  The third identity
 excludes $S^7$, since it makes the base loops groups (Certaine) and no isotope of the octonions is
-associative \cite[Rem.~5.25]{PaperI}, and it fixes the operation on $S^1$ and $S^3$.  Invariance under the right
+associative \cite[Rem.~8.25]{PaperI}, and it fixes the operation on $S^1$ and $S^3$.  Invariance under the right
 transports cannot be dropped even if invariance under the left transports and one clock is kept: the
-example of \cite[Prop.~5.26]{PaperI} has a comparison invariant under the maps $x\mapsto qxe^{i\alpha}$, the left
+example of \cite[Prop.~8.26]{PaperI} has a comparison invariant under the maps $x\mapsto qxe^{i\alpha}$, the left
 transports and right multiplication by a clock, that is, under the clock-preserving group $\cL T\cong\U(2)$ of
 Proposition~\ref{prop:clock} (and not under right multiplication by $e^{j\alpha}$); it is not round.  Its comparison
 is continuous; along every geometric sequence $\epsilon=2^{-k}\epsilon_0$ the ratio $\theta(e^{\epsilon u})/\epsilon$ converges to a
 function periodic in $\log_2\epsilon$, which would be identically $1$ if $\kappa$ were twice differentiable on the
 diagonal, and according to a numerical computation reported in the companion (not a certified one) it
-is not, so that $\kappa$ is not twice differentiable on the diagonal \cite[Prop.~5.26(iv), Rem.~5.29]{PaperI}.  If so, it
+is not, so that $\kappa$ is not twice differentiable on the diagonal \cite[Prop.~8.26(iv), Rem.~8.29]{PaperI}.  If so, it
 has no second-order form there, which Hypothesis~F(iv) needs.
 
 \begin{theorem}[two-readout determinacy]\label{thm:trd}
@@ -529,7 +529,7 @@ the instances of (TRD) with the fixed point $x$ were used.)
 \end{proof}
 
 \begin{remark}\label{rem:trd}
-Paper~I \cite[Thm.~4.5]{PaperI} proves more: under $(\Omega1)$, $(\Omega2\mathrm{a,b,c})$ and (TRD),
+Paper~I \cite[Thm.~7.5]{PaperI} proves more: under $(\Omega1)$, $(\Omega2\mathrm{a,b,c})$ and (TRD),
 $2\kappa(o,\cdot)-1=m+(1-m)\re$ for a constant $m\in[0,1)$, and $m=0$ iff $\kappa$ has a zero.  The proof
 above is different: it uses the zero of $(\Omega2\mathrm d)$ directly and needs (TRD) only at one point
 $x$.
@@ -556,7 +556,7 @@ our sense implies this); pre-d'Alembert functions on topological monoids are of 
 $\tfrac12\tr\circ h$ with $h$ a continuous homomorphism into $\mathrm{Mat}_2(\C)$ \cite[Thm.~4.12]{Davison09}; see also
 \cite{Stetkaer}.  The law $(\Omega3)$ is the diagonal case $a=b$.  Paper~I shows that the two-variable law
 alone, with $(\Omega1)$ and $(\Omega2\mathrm{a,b,c})$, already gives the two models without $(\Omega2\mathrm d)$
-\cite[Cor.~3.12]{PaperI}, whereas the diagonal case needs $(\Omega2\mathrm d)$: on $\SO(3)$ the function
+\cite[Cor.~6.12]{PaperI}, whereas the diagonal case needs $(\Omega2\mathrm d)$: on $\SO(3)$ the function
 $\psi=\cos\alpha$ of the rotation angle is faithful, smooth and satisfies the diagonal case, but for quarter
 turns $a,b$ about orthogonal axes $\psi(ab)+\psi(ab^{-1})=-1\neq0=2\psi(a)\psi(b)$.
 \end{remark}
@@ -575,7 +575,7 @@ $z\mapsto e^{2i\alpha}z$ of $S^1$.
 So a real qubit occurs as the commutative solution, and noncommutativity of transport is what
 excludes it.  From now on $M$ is the noncommutative solution $S^3$.
 
-\begin{theorem}[obstruction {\cite[Thm.~5.5]{PaperI}}]\label{thm:obstruction}
+\begin{theorem}[obstruction {\cite[Thm.~8.5]{PaperI}}]\label{thm:obstruction}
 A sphere $S^n$, $n\ge1$, carries a continuous ternary operation satisfying $(\Omega1)$ only for
 $n\in\{1,3\}$.  In particular the unit sphere $S^{2^{N+1}-1}$ of $(\C^2)^{\otimes N}$, $N\ge2$, carries
 no origin-free transport.
@@ -583,7 +583,7 @@ no origin-free transport.
 The proof (Paper~I) combines Certaine's lemma with the fact that a compact connected Lie group is a
 torus or has nonzero third cohomology.  Paper~I also shows that the transport is equivalent to a pair
 of flat metric connections with opposite torsion whose mean is the round Levi-Civita connection, and
-that $s_x$ is the geodesic symmetry at $x$ \cite[Prop.~5.3]{PaperI}; we use only Theorem~\ref{thm:obstruction}.
+that $s_x$ is the geodesic symmetry at $x$ \cite[Prop.~8.3]{PaperI}; we use only Theorem~\ref{thm:obstruction}.
 
 %=====================================================================================
 \section{One system}\label{sec:one}
@@ -944,7 +944,7 @@ exactly, since $\ip{\Phi(x)\otimes\Phi(y)}{\Phi(x')\otimes\Phi(y')}=\kappa(x,x')
 class-correlations.  The division algebras enter here only through the readings of one $\R^4$; on the transport side,
 a ternary map on a round sphere with the standard comparison that satisfies the two Mal'cev identities
 and leaves $\kappa$ invariant under all left and right transports exists only on $S^0$, $S^1$, $S^3$, $S^7$, by
-Hurwitz's theorem \cite[Prop.~5.13]{PaperI}, which bears on the configuration space and not on the readings.
+Hurwitz's theorem \cite[Prop.~8.13]{PaperI}, which bears on the configuration space and not on the readings.
 What the theorem adds to the classifications of real, complex and quaternionic
 quantum theory \cite{Dyson62,Baez12,Adler95} and to the reconstructions that derive the complex qubit from
 a binary elementary system with composites \cite{DB,BruknerZeilinger09,HoehnWever17,MMAP,MMPA14,BGW20} is
@@ -990,7 +990,7 @@ $\mathsf F=s^p$ (Theorem~\ref{thm:readings}(i)) and [N] gives $p=2$ (Theorem~\re
 not suffice for one system, since in complex dimension two every $\mathsf F$ with $\mathsf F(\cos t)+\mathsf F(\sin t)=1$
 is normalised, for example $\mathsf F(s)=3s^4-2s^6$.  The real reading $K=\{\pm1\}$ and every finite $K$ contain no clock and are excluded by [Cl]
 directly.  The real reading, $w=c^2$ on $S^3/\{\pm1\}$, is the $\SO(3)$ solution of $(\Omega1)$, $(\Omega2\mathrm{a,b,c})$,
-$(\Omega3)$ that $(\Omega2\mathrm d)$ excludes at the level of configurations \cite[Rem.~3.13]{PaperI}; at the level of
+$(\Omega3)$ that $(\Omega2\mathrm d)$ excludes at the level of configurations \cite[Rem.~6.13]{PaperI}; at the level of
 states it is excluded by binarity (Theorem~\ref{thm:readings}(ii)) and equally by [Cl].  [Cl] is the counterpart, in the comparison structure, of Stueckelberg's description of complex
 quantum theory as real quantum theory with an operator $J$ commuting with all observables
 \cite{Stueckelberg}: here $J$ generates the unobservable clock, and every quantity defined on classes is
@@ -1895,7 +1895,7 @@ Theorem~\ref{thm:comp}; the factors are identified as in Theorem~\ref{thm:origin
 put $\bar A=Q\setminus A$, $\rho_A=\tr_{\bar A}\lvert\Psi\rangle\langle\Psi\rvert$ and $S(\rho)=-\tr\rho\log\rho$ (natural logarithm, $0\log0=0$).  Inner
 products are conjugate-linear in the first argument.  A \emph{singlet} is a vector fixed by joint transport.
 The closed-register model includes every measurement and reference system used in its statistics; its
-origin-free kinematics is that of the heap and the round-trip law \cite[Def.~2.3, Thm.~3.1]{PaperI}.
+origin-free kinematics is that of the heap and the round-trip law \cite[Def.~5.3, Thm.~6.1]{PaperI}.
 The choice of a global singlet is a condition on the state.
 
 \begin{theorem}[singlets and maximally mixed marginals]\label{thm:cusinglet}
@@ -2417,7 +2417,7 @@ the feasible range is $\tfrac7{25}\le c\le1$, with determinant $\tfrac{13}{125}$
 $1-b^2=\tfrac9{25}$ and releases $c$.  For $a=b=\tfrac12$ the endpoints are $-\tfrac12$ and $1$.  For $c_M=\tfrac12\mathbf1$ and $G_M=\tfrac23I+\tfrac13\mathbf1\mathbf1^*$:
 $\det G_M=(\tfrac23)^{M-1}(M+2)/3$ and $\Delta=(M+8)/(4(M+2))\downarrow\tfrac14$; for orthogonal anchors $\Delta=1-M/4$, with the unique solution $\tfrac12\sum v_j$
 at $M=4$ and none for $M\ge5$.  Three independent real anchors span $\R^3$ and their Gram matrix fixes their
-geometry up to $\OO(3)$, reflections included \cite[Prop.~0.25]{PaperI}: three anchors fix no chirality, and
+geometry up to $\OO(3)$, reflections included \cite[Prop.~2.25]{PaperI}: three anchors fix no chirality, and
 their caps can contain an open patch while every actual direction has zero slack.  Two caps whose
 centres are exactly $2\alpha$ apart meet in one point.
 \end{example}
@@ -2536,9 +2536,9 @@ definite, consecutive distances are $\sqrt{2-2r}=1/k$, so the endpoints are with
 $\sqrt{2+2r}>1$.
 \end{proof}
 \noindent This is the completion structure of the companion's Part~0: a triangle-flat comparison on a chordal
-graph has a potential \cite[Thm.~0.12, Prop.~0.18]{PaperI}, and cycles carry the obstruction
-\cite[Sec.~0.4]{PaperI}; Gram realisation and its uniqueness up to a unitary are
-\cite[Props.~0.24, 0.25]{PaperI}.
+graph has a potential \cite[Thm.~2.12, Prop.~2.18]{PaperI}, and cycles carry the obstruction
+\cite[Sec.~2.4]{PaperI}; Gram realisation and its uniqueness up to a unitary are
+\cite[Props.~2.24, 2.25]{PaperI}.
 
 \begin{example}[comparison, marginal and outcome consistency]\label{ex:fmoutcomes}
 A four-cycle with three edges $+1$ and one edge $-1$ has positive semidefinite edge windows and no realisation
@@ -2671,7 +2671,7 @@ On a connected multigraph with $n$ vertices and $m$ edges carrying phases $u_e\i
 (including a root) where gauge transformations are trivial, the gauge quotient is a torus of dimension
 $m+k-n$, with coordinates the tree transports to anchored vertices and the loop phases of non-tree edges.  For
 unitary matrices the loop products transform by conjugation ($XZ=-ZX$); compare the group-valued
-analysis of \cite[Sec.~0.4]{PaperI}.
+analysis of \cite[Sec.~2.4]{PaperI}.
 \end{proposition}
 \begin{proof}
 Tree normalisation; every coordinate list is realised, and equal coordinates give the allowed gauge;
@@ -2691,7 +2691,7 @@ gap $a$) without changing the loop.
 \begin{proof}
 Horizontal lifts on arcs; the connection $i\sin^2(\theta/2)d\phi$ has curvature $\tfrac i2\sin\theta\,d\theta\wedge d\phi$, and Stokes; for the length bound
 $\lvert\sin^2(\theta/2)d\phi\rvert\le\tfrac12\tan(\ell/4)ds$ in polar coordinates about the base point; $(a\cdot\sigma)(b\cdot\sigma)=(a\cdot b)\mathbf1+i(a\times b)\cdot\sigma$.  This is the
-spinor form of the excess of \cite[Thm.~9.9, Cor.~9.11]{PaperI}
+spinor form of the excess of \cite[Thm.~19.9, Cor.~19.11]{PaperI}
 \cite{n2-pancharatnam,n2-berry,n2-simon,n2-sb}.  Differentiating $P^2=P$ gives $P\dot PP=0$, $[H,P]=i\hbar\dot P$, $\tr(PH)=0$ and
 $\tr(P\dot H)=0$.
 \end{proof}
@@ -3072,8 +3072,8 @@ $\mathtt{0x2000}$ and the other two first return to $\mathtt{0x1000}$.
 of every level, so a linear address with that index in all four positions translates to the top table itself
 \cite[Vol.~3A, Sec.~5.10.3.3]{rf:Intel2026}; this is the four-slot case of Proposition~\ref{n10:page}.  A
 self-address refers to one entry.  Capture of a twisted diagonal row and its fixed point are
-\cite[Prop.~10B.28 and Thm.~5C.7]{PaperI}, and the positive golden fixed point belongs to its specified
-reciprocal map \cite[Rem.~10B.26]{PaperI}.
+\cite[Prop.~23.29 and Thm.~11.7]{PaperI}, and the positive golden fixed point belongs to its specified
+reciprocal map \cite[Rem.~23.27]{PaperI}.
 
 \begin{proposition}[Description cost and post-hoc copying]\label{n10:cost}
 Suppose that for every record $x$ a lookup compiler produces a consistent total program of cost at most
@@ -3189,7 +3189,7 @@ remaining equivalences restate $U_i\ne\varnothing$.
 \end{proof}
 
 \noindent The kernels $\mathcal K_I$ are the hidden differences of Section~\ref{sec:horizons} restricted to
-ordered pairs; under iteration of a linear readout their chain is \cite[Prop.~5C.19]{PaperI}.
+ordered pairs; under iteration of a linear readout their chain is \cite[Prop.~11.19]{PaperI}.
 
 \begin{example}[Four-bit ledger and duplicate reads]\label{n10:ledger-ex}
 For the uniform law on $X$ and readout fibres of sizes $m_y$, $\lvert E_I\rvert=\sum_ym_y(m_y-1)$, and
@@ -3436,7 +3436,7 @@ independent evidence.
 \end{remark}
 
 \begin{remark}[A missing chart point]\label{n10:stereo}
-The stereographic chart of \cite[Prop.~10.1]{PaperI} models an observation point that is absent from the chart.
+The stereographic chart of \cite[Prop.~22.1]{PaperI} models an observation point that is absent from the chart.
 On the unit sphere the north-pole chart is $u=x/(1-z)$; at colatitude $\theta$ its radius is
 $\sin\theta/(1-\cos\theta)=\cot(\theta/2)$ and its length magnification is $1/(1-\cos\theta)$, and both diverge
 as $\theta\downarrow0$ along a meridian arc of finite length.  In positive dimension the inverse chart extends to
@@ -3501,7 +3501,7 @@ an area bound with units, a layout with a propagation lower bound and an attaina
 that charges build, storage, access, update and reset (Proposition~\ref{prop:fmheat},
 Section~\ref{sec:horizons}); a fixed accessible register and record channel with versions and evidence, and
 predictions evaluated on withheld data; for an unbounded store, a consistent limit of finite readouts with its
-costs, subject to the relative diagonal and Krylov obstructions \cite[Thm.~5C.7, Prop.~5C.19]{PaperI}.
+costs, subject to the relative diagonal and Krylov obstructions \cite[Thm.~11.7, Prop.~11.19]{PaperI}.
 \end{remark}
 
 
@@ -3521,7 +3521,7 @@ These mechanisms supplement the Born reading of Theorem~\ref{thm:born}
 and the restriction and Gram-window constructions of
 Proposition~\ref{prop:curestrict} and Theorem~\ref{thm:fmschur}.
 The transport is the noncommutative case of Paper I,
-\cite[Thm.~3.1]{PaperI}.
+\cite[Thm.~6.1]{PaperI}.
 
 \smallskip\noindent\emph{Relation to earlier sections.}  Several statements here specialise or restate earlier ones,
 and each is stated with its source: pinching and its entropy identity (Proposition~\ref{ob:pinching}, from
@@ -5241,7 +5241,7 @@ Proposition~\ref{prop:soresolution} gives $\varepsilon_{\mathrm{self}}\ge1/\lflo
 capacity are physical inputs (a nearest-neighbour cubic lattice has a different reachable set from a light
 cone).  Separately, under an assumed Fubini--Study angular speed $E/\hbar$, a stage within angle $E\tau/\hbar$ of two
 orthogonal rays needs $\pi/2\le2E\tau/\hbar$, so $n\le4E\Delta\tau/(\pi\hbar)$ such stages fit in $\Delta\tau$; using this as a precision bound
-needs a link to the transcript capacity.  The geodesic recurrence of \cite[Thm.~6.2]{PaperI} advances along
+needs a link to the transcript capacity.  The geodesic recurrence of \cite[Thm.~14.2]{PaperI} advances along
 an arc; a measurement comparison also needs the observable and the information returned.
 \end{remark}
 
@@ -5495,9 +5495,9 @@ cosine and sine averages vanish.
 \end{proof}
 
 \begin{corollary}[sagitta of a comparison]\label{cor:bdsagitta}
-For the phase-aligned lift of a comparison at angle $\theta$ the sagitta of \cite[Prop.~7.1]{PaperI} is $v=1-\cos\theta=1-\sqrt p$, with
+For the phase-aligned lift of a comparison at angle $\theta$ the sagitta of \cite[Prop.~17.1]{PaperI} is $v=1-\cos\theta=1-\sqrt p$, with
 $1-p=2v-v^2$; along a smooth trajectory of speed $s=\Delta H/\hbar$, $v(t,t+dt)=s^2dt^2/2+o(dt^2)$, and on any finite subdivision
-$\sum_j(1-\cos\theta_j)\le\tfrac12\max_j\theta_j\sum_j\theta_j$ \cite[Thm.~7.2(a)]{PaperI}.
+$\sum_j(1-\cos\theta_j)\le\tfrac12\max_j\theta_j\sum_j\theta_j$ \cite[Thm.~17.2(a)]{PaperI}.
 \end{corollary}
 \begin{remark}[summed sagittas give no clock time]\label{rem:bdsagitta}
 The claim that summed sagittas along a smooth path give a nonzero continuum clock time is refuted: for a
@@ -6948,7 +6948,7 @@ $\sigma^R$ up to the sign of the spatial part.
 $\sigma^L(E_0)=(1,0)$, $\sigma^L(E_q)=(0,q)$: a global orthonormal frame (tetrad) of $\cD\cong\R\times S^3$.
 With $t=\sinh s$, $v=\cosh s\cdot n$, the metric is $-ds^2+\cosh^2s\,g_{S^3}$, $E_0=\partial_s$, and
 $E_q=(\cosh s)^{-1}X_q$ with $X_q(n)=nq$ the left-invariant fields, which generate the right transports
-and are parallel for the left parallelism of the heap \cite[Prop.~5.3]{PaperI}.
+and are parallel for the left parallelism of the heap \cite[Prop.~8.3]{PaperI}.
 (iv) The clock field, the tangent $nu$ of the orbit $n\,e^{\chi u}$, satisfies $\sigma^L(0,nu)=(0,u)$, a
 constant spacelike unit vector, and $\sigma^R(0,nu)=(0,nu\bar n)$.
 (v) The flat metric connection for which the tetrad is parallel has torsion
@@ -6999,7 +6999,7 @@ The commutant of $\SO(3)$, irreducible on $\R^3$ and trivial on $\R$, is $\{\mat
 and $\Lambda(a)\in\OO(1,3)$ forces $\lambda,\mu\in\{\pm1\}$; by continuity $\Lambda$ is constant.
 \end{proof}
 The spatial part of the torsion is the torsion $-[X_p,X_q]$ of the left parallelism of the unit
-three-sphere \cite[Prop.~5.3(i)]{PaperI}, divided by the scale factor $\cosh s$; the temporal part is the expansion rate
+three-sphere \cite[Prop.~8.3(i)]{PaperI}, divided by the scale factor $\cosh s$; the temporal part is the expansion rate
 $\tanh s$.  The soldering is therefore unique up to the signs $D$ and the choice of side, which
 transport reversal exchanges.
 
@@ -7353,7 +7353,7 @@ Periodicity at $s=0$ makes $\sqrt B$ an integer; if $B>0$, the values at $\theta
 small $s$ only if $A=0$.
 \end{proof}
 Part (ii) agrees with the classification of Paper~I: faithful solutions live on compact groups
-\cite[Thm.~3.11]{PaperI}, and the cone is not compact.
+\cite[Thm.~6.11]{PaperI}, and the cone is not compact.
 
 \begin{proposition}[linear structure on the cone]\label{prop:conelinear}
 The centred comparison $c=\ip xy$ of $M$ has the unique bilinear extension $C(x,y)=\ip xy$ to $V$, and for
@@ -7674,7 +7674,7 @@ field, distinct from the state cone of Theorem~\ref{thm:cone} and the cone-value
 
 \begin{remark}[the pair, Hypothesis G and the four-sphere]\label{rem:hborigin}
 Paper~I's $S^7$ family concerns ternary operations after relaxing the single-system axioms
-\cite[Thm.~5.18, Props.~5.16, 5.17]{PaperI}; the single-system solutions have dimensions one and three.  In
+\cite[Thm.~8.18, Props.~8.16, 8.17]{PaperI}; the single-system solutions have dimensions one and three.  In
 Hypothesis~G(ii) the real bidoublet is $V_3$ of a third structure, on which $\SU(V_2)$ acts trivially.  The tangent
 space at a pole of $S^4$ is the same real bidoublet under $\SO(4)$ (the action on $y$ in Proposition~\ref{prop:hbhopf}), and
 the extra coordinate $z$ is a custodial singlet.  Agreement of representations leaves the curved metric and
@@ -7770,7 +7770,7 @@ model \cite{n6:skyrme}.
 The invariant $(\tr L_\mu L^\mu)^2$ is a different four-derivative density: on a nonconstant static rank-one
 current, for which the commutator vanishes, it is positive.  Uniqueness holds only for the metric square
 of the commutator two-form.  The area of brackets also enters the Levi-Civita curvature of the round
-sphere \cite[Prop.~5.3(ii)]{PaperI}, which, like the curvature of a dynamical connection, is a
+sphere \cite[Prop.~8.3(ii)]{PaperI}, which, like the curvature of a dynamical connection, is a
 different object from $dL$.  On a symmetric space $G/H$ with lift $\omega+P$ ($\omega\in\mathfrak h$, $P\in\mathfrak m$) the isotropy
 part of flatness reads $d\omega+\omega\wedge\omega=-(P\wedge P)_{\mathfrak h}$, a related area curvature.
 \end{remark}
@@ -8249,19 +8249,19 @@ origin-free singlet, and the colour triplet with $\mathrm{Sym}^2V$.
 
 \begin{remark}[octonions]\label{rem:octonions}
 Without the third identity of $(\Omega1)$ the geometry is already a round $S^1$, $S^3$ or $S^7$
-\cite[Thm.~5.18, Cor.~5.19]{PaperI}; in this paper $S^7$ is excluded by that identity, equivalently by the group
+\cite[Thm.~8.18, Cor.~8.19]{PaperI}; in this paper $S^7$ is excluded by that identity, equivalently by the group
 structure of the base loops, and nothing is claimed for it.  Weakening the third identity to subsystems
 generated by two elements admits the unit octonions $S^7$ with $\hp{x}{y}{z}=(x\bar y)z$ and $\kappa=\lVert\tfrac12(x+y)\rVert^2$, which satisfy
 $(\Omega2)$, $(\Omega3)$ and violate the third identity (alternativity; $(x\bar w)x=2\ip{x}{w}x-w$); by
 Adams \cite{Adams} a sphere with the first two identities and a jointly continuous operation has dimension $1$, $3$ or $7$.  On a round sphere
 with the standard comparison, Paper~I proves more by Hurwitz's theorem: a ternary operation with the two
 Mal'cev identities and $\kappa$ invariant under left and right transports exists only in dimensions $1,2,4,8$
-of the ambient space (spheres $S^0,S^1,S^3,S^7$) \cite[Prop.~5.13]{PaperI}; it is unique on $S^1$ \cite[Rem.~5.14]{PaperI}, it is $a\bar bx$ or its
-opposite on $S^3$ under continuity \cite[Thm.~5.15]{PaperI}, and on $S^7$ the continuous solutions form an
+of the ambient space (spheres $S^0,S^1,S^3,S^7$) \cite[Prop.~8.13]{PaperI}; it is unique on $S^1$ \cite[Rem.~8.14]{PaperI}, it is $a\bar bx$ or its
+opposite on $S^3$ under continuity \cite[Thm.~8.15]{PaperI}, and on $S^7$ the continuous solutions form an
 infinite-dimensional family, from which one origin-free identity, the identity that recovers a ternary
 Moufang operation from its base loop \cite{BK12}, selects $(a\bar b)x$ up to isometry
-\cite[Props.~5.16, 5.17]{PaperI}; the weakened third identity does not give di-associativity
-\cite[Prop.~5.10]{PaperI}.  These statements concern the configuration space of one system; they imply
+\cite[Props.~8.16, 8.17]{PaperI}; the weakened third identity does not give di-associativity
+\cite[Prop.~8.10]{PaperI}.  These statements concern the configuration space of one system; they imply
 nothing for physics beyond kinematics, and in particular do not make $S^7$ the state space of a system.  The sphere
 $S(V_2)\cong S^7$ is homogeneous under $\SU(4)$ with stabiliser $\SU(3)$
 (Proposition~\ref{prop:pairsu3}) and under $\mathrm{Spin}(7)$ with stabiliser $G_2$, inside which the
@@ -8296,7 +8296,7 @@ Which parts of a symmetry-breaking geometry, of the exterior algebra of a spatia
 composition of local comparison costs are fixed by comparison data, and which require further physical
 input?  The inputs are a reductive pair $H\subset G$ with an invariant inner product, the oriented Euclidean
 three-space with its Clifford algebra, qubit rotations with the cyclic Bargmann invariant of
-\cite[Thm.~5A.10]{PaperI}, and the sagitta $\varsigma(x)=1-\cos x$ of Corollary~\ref{cor:bdsagitta}.  Proved here:
+\cite[Thm.~9.10]{PaperI}, and the sagitta $\varsigma(x)=1-\cos x$ of Corollary~\ref{cor:bdsagitta}.  Proved here:
 the Cartan decomposition of the Maurer--Cartan form on $G/H$, which splits the comparison norm of a lift
 into a vertical and a broken part and gives the Noether current of the compact sigma model
 (Theorem~\ref{n12:coset}), with the scalar and texture sections as instances (Remark~\ref{n12:meaning}); the
@@ -8353,7 +8353,7 @@ as the Noether current of the left $G$-action.
 The transformation laws (i) are the construction of Coleman, Wess and Zumino \cite{rf:Coleman1969} and of Callan,
 Coleman, Wess and Zumino \cite{rf:Callan1969}: $P$ descends to a one-form with values in the bundle associated
 with $\mathfrak m$, and $\omega$ transforms as an $H$-connection.  Paper~I treats ordered transport and the plaquette
-curvature \cite[Thm.~9.5, Prop.~9.8]{PaperI}.  For $u=\exp(\pi)$ with $\pi$ valued in $\mathfrak m$, $P=d\pi+O(\pi\,d\pi)$ and
+curvature \cite[Thm.~19.5, Prop.~19.8]{PaperI}.  For $u=\exp(\pi)$ with $\pi$ valued in $\mathfrak m$, $P=d\pi+O(\pi\,d\pi)$ and
 $J=f^2d\pi+O(\pi\,d\pi)$, so at quadratic order on flat spacetime the field equation is the massless wave
 equation for $\pi$: these are the Goldstone currents of the global model.  When $G=\Aut(M)$ the inner product is a
 multiple of the Hessian form of $\kappa$ (Theorem~\ref{thm:gauge}(iv)), and (iii) splits the comparison speed of the lift
@@ -8460,7 +8460,7 @@ Hypothesis~Br(iv), the exact SI values of $2\pi\hbar$ and $e$ give $2\pi\hbar/(2
 
 \begin{proposition}[volume, orientation and the paravector forms]\label{n12:exterior}
 Let $V=\R^3$ be oriented Euclidean, with exterior dimensions $1,3,3,1$ and Hodge isometries as in
-\cite[Thm.~5E.18]{PaperI}.  The star exchanges $1$ and the oriented volume element; both span trivial $\SO(3)$
+\cite[Thm.~13.19]{PaperI}.  The star exchanges $1$ and the oriented volume element; both span trivial $\SO(3)$
 representations, and an orientation-reversing orthogonal map fixes $1$ and negates the volume element.  In
 $\mathrm{Cl}(3,0)$ the volume element $I_3=e_1e_2e_3$ is central and $I_3^2=-1$.  For the paravector $p=t+x$, $x\in V$,
 Clifford conjugation gives $\bar p=t-x$ and $p\bar p=t^2-\lvert x\rvert^2$; the coefficient norm on the same space is $t^2+\lvert x\rvert^2$.
@@ -8480,7 +8480,7 @@ Reversal of the order conjugates $\Delta$; a proper rotation of the three rays f
 \begin{proof}
 Expand with $(n\cdot\sigma)(n'\cdot\sigma)=(n\cdot n')+i(n\times n')\cdot\sigma$ and $\tr(\sigma_j)=0$, $\tr\sigma_j\sigma_k=2\delta_{jk}$.  The
 projectors are Hermitian, and $n_1\cdot(n_2\times n_3)$ is the oriented determinant.  This evaluates the cyclic invariant of
-\cite[Thm.~5A.10]{PaperI} for qubits.
+\cite[Thm.~9.10]{PaperI} for qubits.
 \end{proof}
 
 \begin{example}[three equal-angle rays]\label{n12:equal-rays}
@@ -8491,11 +8491,11 @@ $\Delta=(5+i\sqrt2)/8$; a reflection gives $(5-i\sqrt2)/8$.
 
 \begin{remark}[selection of signature and clock]\label{n12:clockmodel}
 The paravector form $p\bar p=t^2-\lvert x\rvert^2$ is the determinant of the Hermitian matrix $t+x\cdot\sigma$, preserved by
-$X\mapsto gXg^\dagger$, $g\in\SL(2,\C)$, which gives $\mathrm{Spin}^+(1,3)$ \cite[Prop.~5B.10, Rem.~5E.21]{PaperI}; this is the Lorentz
-geometry of the indefinite comparisons of \cite[Sec.~5B]{PaperI}.  The coefficient norm $t^2+\lvert x\rvert^2=\tfrac12\tr(pp^\dagger)$ is
+$X\mapsto gXg^\dagger$, $g\in\SL(2,\C)$, which gives $\mathrm{Spin}^+(1,3)$ \cite[Prop.~10.10, Rem.~13.22]{PaperI}; this is the Lorentz
+geometry of the indefinite comparisons of \cite[Sec.~10]{PaperI}.  The coefficient norm $t^2+\lvert x\rvert^2=\tfrac12\tr(pp^\dagger)$ is
 the determinant of the quaternion $t-i\,x\cdot\sigma$ and is preserved by $\SO(4)$, acting by $q\mapsto aqb^\dagger$ with
-$a,b\in\SU(2)$ \cite[Prop.~5E.20]{PaperI}.  Selecting the first form, a future direction and a limiting
-speed are the physical inputs of \cite[Hyp.~5B.11]{PaperI}.  With $t=c\,t_{\mathrm{lab}}$ on a future timelike curve and
+$a,b\in\SU(2)$ \cite[Prop.~13.21]{PaperI}.  Selecting the first form, a future direction and a limiting
+speed are the physical inputs of \cite[Hyp.~A.3]{PaperI}.  With $t=c\,t_{\mathrm{lab}}$ on a future timelike curve and
 $w=\lvert dx\rvert/(c\,dt_{\mathrm{lab}})$, division of the interval by $c^2dt_{\mathrm{lab}}^2$ gives $d\tau/dt_{\mathrm{lab}}=\sqrt{1-w^2}=1/\gamma$: the
 values $1,\tfrac35,0$ at $w=0,\tfrac45$ and in the null limit, with rapidity $\operatorname{artanh}\tfrac45=\log3$.  A derivation of the
 clock from a spatial path integral, or a reading of $1-w^2$ as a resting standing-wave fraction, would need a
@@ -8509,7 +8509,7 @@ algebra $\mathrm{Cl}(3,0)$ with the same $I_3$ carries both forms of Proposition
 $\SO(4)$ of $t^2+\lvert x\rvert^2$ contains no boosts.  \emph{Corrected statement.}  Clifford conjugation defines the indefinite
 form, whose symmetry group is the Lorentz group (Remark~\ref{n12:clockmodel}); choosing it and calibrating a clock
 are inputs.  In four dimensions the unit pseudoscalar of a given form squares to $-1$ in signatures $(1,3)$ and
-$(3,1)$ and to $+1$ in $(4,0)$ and $(2,2)$, matching $*^2=-1$ and $*^2=+1$ on two-forms \cite[Prop.~5E.20]{PaperI}; this sign
+$(3,1)$ and to $+1$ in $(4,0)$ and $(2,2)$, matching $*^2=-1$ and $*^2=+1$ on two-forms \cite[Prop.~13.21]{PaperI}; this sign
 is computed from a four-dimensional form already given.
 \end{remark}
 
@@ -8620,7 +8620,7 @@ Bargmann phase of its vertices is $\arg\Delta=\Omega_\triangle/2$.  Moreover
 $\log C=\theta^2[\tfrac12e_1,\tfrac12e_2]+O(\theta^3)$, and at $\theta=\pi/2$: $(\vartheta,\varrho,\Omega_\triangle)=(\pi/3,2\pi/3,\pi/2)$.
 \end{proposition}
 \begin{proof}
-As unit quaternions (convention $ij=k$ of \cite[Ex.~5E.16]{PaperI}) the gates are $\cos\frac\theta2+\sin\frac\theta2\,i$ and
+As unit quaternions (convention $ij=k$ of \cite[Ex.~13.17]{PaperI}) the gates are $\cos\frac\theta2+\sin\frac\theta2\,i$ and
 $\cos\frac\theta2+\sin\frac\theta2\,j$.  $C=(U_2U_1)^{-1}(U_1U_2)$, and the two products have coordinates
 $(\cos^2\frac\theta2,\cos\frac\theta2\sin\frac\theta2,\cos\frac\theta2\sin\frac\theta2,\pm\sin^2\frac\theta2)$, with scalar pairing $1-2\sin^4\frac\theta2$.  Since
 $\cos\vartheta=1-2\sin^2(\vartheta/2)$, $\vartheta=2\arcsin(\sin^2\frac\theta2)\in[0,\pi/3]$, and $\varrho=2\vartheta\le2\pi/3$ is the principal angle.  For the
@@ -8630,8 +8630,8 @@ $\Omega_\triangle=2\arctan(1/\cos\theta)-\pi/2$ for $\theta<\pi/2$, which equals
 with the continuous values at $0$ and $\pi/2$.  By Lemma~\ref{n12:bloch}, with pairings $\cos\theta,\cos\theta,\cos^2\theta$ and
 oriented determinant $\sin^2\theta$, $\Delta(x,z,y)=\tfrac14\bigl((1+\cos\theta)^2+i\sin^2\theta\bigr)$, whose argument is $\arctan(\tan^2\frac\theta2)$.
 Taylor expansion of the closed forms gives the series; the Baker--Campbell--Hausdorff formula gives the
-logarithm, as in \cite[Prop.~9.8]{PaperI}; the endpoint values follow by substitution.  The excess--area
-relation is \cite[Cor.~9.11]{PaperI}.
+logarithm, as in \cite[Prop.~19.8]{PaperI}; the endpoint values follow by substitution.  The excess--area
+relation is \cite[Cor.~19.11]{PaperI}.
 \end{proof}
 
 \begin{remark}[refuted: the gate eigenphase is the triangle area]\label{n12:ref-area}
@@ -8711,7 +8711,7 @@ continuous unitary path requires an interpolation choice.
 \begin{remark}[refuted: the circle double cover closes the tower]\label{n12:ref-cover}
 \emph{Claim.}  The circle double cover is a M\"obius bundle and establishes closure of $L_0$--$L_5$.  \emph{Counterexample.}
 The connected double cover of the circle has total space a circle; the $2\pi$ sheet change and $4\pi$ return of the
-spinor lift are \cite[Ex.~5E.16]{PaperI}.  \emph{Corrected statement.}  The M\"obius line bundle is the bundle associated with
+spinor lift are \cite[Ex.~13.17]{PaperI}.  \emph{Corrected statement.}  The M\"obius line bundle is the bundle associated with
 the double cover through the sign representation of $\Z_2$ on $\R$, an additional choice; closure of the tower needs a
 map of states from $L_5$ to $L_0$, which the cover does not supply.
 \end{remark}
@@ -8722,7 +8722,7 @@ map of states from $L_5$ to $L_0$, which the cover does not supply.
 For two separated cells of angles $+\theta,-\theta$ an extensive source convention gives $\varsigma_{\mathrm{sep}}=2\varsigma(\theta)>0$, while their
 signed charges in a common frame sum to zero.  For two inverse rotations on one carrier, $U(-\theta)U(\theta)=I$ and the
 sagitta of the net rotation is $\varsigma_{\mathrm{seq}}=0$.  Independently prescribed cell weights and the cost of a product obey
-different composition rules.  The finite Stokes theorem \cite[Thm.~9.5]{PaperI} uses a based ordered product: the four
+different composition rules.  The finite Stokes theorem \cite[Thm.~19.5]{PaperI} uses a based ordered product: the four
 signed generators of $C=U_1^\dagger U_2^\dagger U_1U_2$ sum to zero, yet $C\ne I$ for $0<\theta\le\pi/2$ (Proposition~\ref{n12:gates}).  In
 electrostatics, charges $\pm q$ at $\pm\mathbf s/2$ have zero monopole and dipole moment $q\mathbf s$; the potential is
 $q\,\mathbf s\cdot\mathbf r/\lvert\mathbf r\rvert^3+O(\lvert\mathbf r\rvert^{-3})$ and the field is of order $\lvert\mathbf r\rvert^{-3}$, with nonnegative energy density away from the
@@ -8901,7 +8901,7 @@ $[A,B]=2A\times B$ and $-(A\times B)\times C=\ip BCA-\ip ACB$; the linear equati
 $\mathcal J_\perp(0)=\nabla_X\mathcal J_\perp(0)$ the field vanishes first at $3\pi/4$, while a nonzero normal field vanishing at $0$ next vanishes at
 $\pi$: focusing of a family and a conjugate point are different conditions.  For the limit, $\delta_t=h\lvert\dot R(t_*)\rvert+o(h)$
 uniformly by $C^1$ regularity, and $\varsigma(x)=x^2/2+O(x^4)$, $\mathcal I(x)=x^2/4+O(x^4)$ give Riemann sums.  The unscaled sums tend to
-zero, as in Corollary~\ref{cor:bdsagitta} and Remark~\ref{rem:bdsagitta} and \cite[Thm.~7.2]{PaperI}; the scaled limits are
+zero, as in Corollary~\ref{cor:bdsagitta} and Remark~\ref{rem:bdsagitta} and \cite[Thm.~17.2]{PaperI}; the scaled limits are
 energy functionals, and a potential term in a scaled action would need its own mesh normalisation.
 \end{proof}
 
@@ -8914,13 +8914,13 @@ perpendicular to the common axis moves on a great circle, and two consecutive st
 the minimal closing arc give trivial triangle holonomy.  A probe off that plane moves on a small circle: for
 $r_j=(a\cos j\theta,a\sin j\theta,b)$, $j=0,1,2$, $a^2+b^2=1$, $a,b>0$, the oriented determinant is $2a^2b\sin\theta(1-\cos\theta)>0$ and
 $\im\Delta(r_0,r_1,r_2)$ is a quarter of it (Lemma~\ref{n12:bloch}), so the probe triangle has nonzero phase although both
-increments share the axis.  This extends \cite[Rem.~10A.10, Thm.~9.14]{PaperI}.
+increments share the axis.  This extends \cite[Rem.~22.13, Thm.~19.14]{PaperI}.
 \end{remark}
 
 \begin{example}[four rotation steps]\label{n12:action-example}
 For $\Theta=2\pi/3$, $N=4$: four steps of $\pi/6$ have sagitta $4-2\sqrt3$ and product of Born weights $\cos^8(\pi/12)=(97+56\sqrt3)/256$
 (surprisal $0.27734586$); one step $2\pi/3$ with three zero steps has sagitta $\tfrac32$ and product $\tfrac14$ (surprisal $1.38629436$).
-In the Cayley chart $Q(v)=\bigl((1-\lvert v\rvert^2),2v\bigr)/(1+\lvert v\rvert^2)$ of \cite[Prop.~10.1]{PaperI}, the side path $v_0=0$, $(\tfrac16,\tfrac16,0)$,
+In the Cayley chart $Q(v)=\bigl((1-\lvert v\rvert^2),2v\bigr)/(1+\lvert v\rvert^2)$ of \cite[Prop.~22.1]{PaperI}, the side path $v_0=0$, $(\tfrac16,\tfrac16,0)$,
 $(\tfrac13,\tfrac14,0)$, $(\tfrac12,\tfrac16,0)$, $v_4=(1/\sqrt3,0,0)$ (or its reflection in the second axis) has Born weights $\beta_t=(Q_{t-1}\cdot Q_t)^2$,
 sagitta $2\sum_t(1-\beta_t)=0.95316800$, product $0.59837452$ and surprisal $0.51353844$; all three paths have the same endpoints.  The
 Euclidean chord midpoint of the endpoint lifts has squared norm $\tfrac34$ (their product is $\tfrac12$) and leaves the unit
@@ -9133,7 +9133,7 @@ coupling is $g_c=\sqrt2/(\bar M_{\mathrm P}r_c)$.
 \end{proposition}
 \begin{proof}
 Represent points by unit quaternions, with metric $R^2$ times the unit
-metric as in the round model of Paper~I \cite[Thm.~5.18, Cor.~5.19]{PaperI}.
+metric as in the round model of Paper~I \cite[Thm.~8.18, Cor.~8.19]{PaperI}.
 The action $q\mapsto aqb^{-1}$ is orthogonal with kernel
 $(-1,-1)$ and the image has the dimension of $\SO(4)$.
 The fundamental fields are $e_aq/2$ and $-qe_a/2$ for an orthonormal
@@ -9670,7 +9670,7 @@ The radius comparison uses the fitted common weak coupling in
 the formula of Proposition~\ref{cr:s3}.
 \end{proof}
 
-\begin{proposition}[The adjoint-breaking spectrum of Paper~II]\label{cr:paperspectrum}
+\begin{proposition}[The adjoint-breaking spectrum of Hypothesis~Ps]\label{cr:paperspectrum}
 Apply the step spectrum of Hypothesis~Ps in
 Section~\ref{sec:unification} with upper matching
 $A_R=A_L=A_U$, $A_4=q_4A_U$. For the real bidoublet the
@@ -10185,7 +10185,7 @@ the raw edge word $(AB)(BC)(CA)$ instead equals the identity.
 Diagonalize $H$ and apply Taylor's theorem through degree three
 to $1-\cos h$ for each eigenvalue $h$. For a smooth connection the
 small-plaquette expansion of Paper~I gives
-$H=a^2 F_{\mu\nu}+O(a^3)$ \cite[Prop.~9.8]{PaperI}. Squaring it gives a trace
+$H=a^2 F_{\mu\nu}+O(a^3)$ \cite[Prop.~19.8]{PaperI}. Squaring it gives a trace
 $a^4\operatorname{tr}(F_{\mu\nu}^2)+O(a^5)$, and the Taylor
 remainder is $O(a^8)$. The raw word reduces to $AB^2C^2A=A^2$.
 \end{proof}
@@ -10362,10 +10362,10 @@ identifications. Proposition~\ref{tr:obstruction} proves the obstruction.
 \subsection{The multiplication tensor}\label{tr:algebra}
 
 Paper~I gives roundness without the third heap identity
-\cite[Thm.~5.18, Cor.~5.19]{PaperI}, with the dimension count from Hurwitz's theorem \cite[Prop.~5.13]{PaperI} and
-rigidity on $S^3$ \cite[Thm.~5.15]{PaperI}; the list $S^1,S^3,S^7$ is a classification, not a forced tower of
-encodings \cite[Rem.~5C.5]{PaperI}. Its Propositions~5.16
-and~5.17 distinguish the
+\cite[Thm.~8.18, Cor.~8.19]{PaperI}, with the dimension count from Hurwitz's theorem \cite[Prop.~8.13]{PaperI} and
+rigidity on $S^3$ \cite[Thm.~8.15]{PaperI}; the list $S^1,S^3,S^7$ is a classification, not a forced tower of
+encodings \cite[Rem.~11.5]{PaperI}. Its Propositions~8.16
+and~8.17 distinguish the
 family of ternary operations on \(S^7\) from the operation
 \(T(a,b,x)=(a\bar b)x\) selected by \((\mathrm C_o)\).
 We use the positive-definite product of the selected model at the unit.
@@ -11203,7 +11203,7 @@ $V$ is irreducible. After choosing $I$, it is a single complex
 $\mathcal L$-doublet, with $J$ and $K$ acting antilinearly.
 \end{proposition}
 \begin{proof}
-Paper~I's internal-clock corollary \cite[Cor.~5C.22]{PaperI} gives
+Paper~I's internal-clock corollary \cite[Cor.~11.22]{PaperI} gives
 the right-clock formula under its readout hypotheses. In the quaternionic
 model Proposition~\ref{prop:clock} identifies all such quarter turns.
 Composition is $R_uR_v=R_{vu}$. The anticommutator is thus
@@ -11878,7 +11878,7 @@ are \textsc{numerology}. The compact Dirac construction realises
 three massless copies under Hypothesis~Ix, with the three put in as the charge. The
 topological sector and the coupling to a full chiral family
 would have to be derived to replace the generation-count input of
-Paper~II.
+this paper.
 \end{remark}
 
 \begin{remark}[what does not hold]\label{rem:gnnogo}
@@ -12519,7 +12519,7 @@ fringe-duplication identity $q(2\varphi)=(2q(\varphi)-1)^2$, and two-readout det
 q_{n+1}+q_{n-1}=2\cos\delta\;q_n+(1-\cos\delta);
 \]
 the samples $e^{i\varphi_n}$ are equally spaced on the great circle $S^1$, the case (i) of the geodesic
-recurrence \cite[Thm.~6.2(i)]{PaperI}.  This inhomogeneous three-term recurrence of uniformly sampled fringes is the identity
+recurrence \cite[Thm.~14.2(i)]{PaperI}.  This inhomogeneous three-term recurrence of uniformly sampled fringes is the identity
 on which Prony's method \cite{ex-Prony1795} and linear-prediction analysis of NMR time-domain signals
 \cite{ex-BdBBvO85} rest.
 \emph{Status.}  (a): Proposition~\ref{prop:rebit} with Theorem~\ref{thm:trd} for the commutative solution;
@@ -12533,13 +12533,13 @@ $\cos2\theta=2\cos^2\theta-1$; their content on $S^3$ is that the same law holds
 \begin{example}[Stroboscopic Larmor precession; (a) for the spinor identities]\label{ex:larmor}
 \emph{System.}  A spin-$\tfrac12$ in a static field $B$ along $z$, sampled at times $n\tau$: $\psi_n=U^n\psi_0$ with
 $U=e^{-i\omega\tau\sigma_z/2}$, $\omega=\gamma_{\mathrm p}B$ for a proton.
-\emph{Formula.}  The samples satisfy the heap recurrence $\psi_{n+1}=\hp{\psi_n}{\psi_{n-1}}{\psi_n}$ (\cite[Thm.~6.2]{PaperI};
+\emph{Formula.}  The samples satisfy the heap recurrence $\psi_{n+1}=\hp{\psi_n}{\psi_{n-1}}{\psi_n}$ (\cite[Thm.~14.2]{PaperI};
 Theorem~\ref{thm:dyn}(i)), which in spinor form is
 \[
 \psi_{n+1}=2\,c\,\psi_n-\psi_{n-1},\qquad c=c(\psi_n,\psi_{n-1})=\cos\tfrac{\omega\tau}2\quad\text{(for every }\psi_0),
 \]
 the Cayley--Hamilton identity $U^2=(\operatorname{tr}U)\,U-\mathbf 1$ applied to $\psi_{n-1}$.  Hence
-$\psi_n=U_{n-1}(c)\psi_1-U_{n-2}(c)\psi_0$ with Chebyshev polynomials of the second kind \cite[Thm.~6.2]{PaperI}.  For every test
+$\psi_n=U_{n-1}(c)\psi_1-U_{n-2}(c)\psi_0$ with Chebyshev polynomials of the second kind \cite[Thm.~14.2]{PaperI}.  For every test
 spinor $y$ the comparisons $r_n=\kappa(y,\psi_n)$ obey $r_{n+1}=2c\,r_n-r_{n-1}+1-c$ with coefficients
 independent of $y$ (Remark~\ref{rem:trd}(ii)).  The Born weights $b_n=\beta(y,\psi_n)=\tfrac12(1+r_y\cdot r_{\psi_n})$
 obey a different recurrence, $b_{n+1}=2\cos(\omega\tau)\,b_n-b_{n-1}+(1-\cos\omega\tau)(1+r_y^z r_{\psi_0}^z)$: the
@@ -12575,9 +12575,9 @@ $K_t(A)=\int_0^1e^{itrA}A\,dr$, so $K_0(A)=A$ and $K_t(A)=(e^{itA}-\mathbf1)/(it
 $\lvert\re\tr(K_t(A)K_t(B)K_t(C))-\tr(ABC)\rvert\le\tfrac54L^5t^2$ ($\tfrac1{80}$ at $L=1$, $t=\tfrac1{10}$): the derivatives of $K_t$ have Frobenius norms at most $L,L^2/2,L^3/3$,
 the first derivative of the real trace vanishes at $t=0$, and Taylor's remainder bounds the second by $\tfrac52L^5$ (a library result,
 Section~\ref{sec:lean}).  In this way the free phases between signal pulses in the companion's real comparison synthesis
-\cite[Thm.~6A.1]{PaperI} (there $D(\phi)=R_z(-2\phi)$) are frame updates, the right clock twist of the Larmor samples is a
+\cite[Thm.~15.1]{PaperI} (there $D(\phi)=R_z(-2\phi)$) are frame updates, the right clock twist of the Larmor samples is a
 virtual $Z$, and the $\pi/2$ pulses of Example~\ref{ex:ramsey} are $R_\varphi(\pi/2)$; exact amplification with source queries is
-\cite[Prop.~6A.8]{PaperI}.  Hypothesis~Hw is an implementation input: on the configurations of this paper the clock
+\cite[Prop.~15.8]{PaperI}.  Hypothesis~Hw is an implementation input: on the configurations of this paper the clock
 acts as a scalar only in the complex structure it defines (Proposition~\ref{prop:clock}), and the identification of
 a laboratory frame register with that clock is the phase bridge [Ph] (Remark~\ref{rem:clreal}).
 \end{remark}
@@ -12591,7 +12591,7 @@ Proposition~\ref{prop:complexrefl} each factor is a product of two round-trip re
 $\mathbf1-2|x\rangle\langle x|=s_xs_{ix}$, so $G=-s_ss_{is}s_ws_{iw}$; the sign $-\mathbf1=e^{\pi J_T}$ is an element of the
 clock, so $G$ and the product of four reflections act in the same way on rays.  The orbit $x_k=G^ks$ stays
 in the real plane spanned by $s$ and $w$, and satisfies $x_{k+1}=s_{x_k}(x_{k-1})=2c\,x_k-x_{k-1}$ with
-$c=\operatorname{Re}\langle x_k,x_{k-1}\rangle=1-2/N$, the three-term form (d) of \cite[Thm.~6.2]{PaperI}, equivalent to its reflection form (a); hence
+$c=\operatorname{Re}\langle x_k,x_{k-1}\rangle=1-2/N$, the three-term form (d) of \cite[Thm.~14.2]{PaperI}, equivalent to its reflection form (a); hence
 $\lvert\langle w|x_k\rangle\rvert^2=\sin^2((2k+1)\theta)$, $\sin\theta=N^{-1/2}$.
 \emph{Numbers.}  $N=4$: one iteration gives success probability $1$; $N=8$: $0.7812$ after one and $0.9453$
 after two iterations (ideal values; the measured ones are in \cite{ex-Figgatt17}).
@@ -12607,9 +12607,9 @@ these reflections are operations of a register is Postulate~C3 (Proposition~\ref
 $\langle\theta_i\theta_j\rangle=2D_{\mathrm r}\,t\,\delta_{ij}$ for the rotation vector (for example a fluctuating isotropic field in
 the motional-narrowing regime).
 \emph{Formula.}  The spinor performs Brownian motion on $S^3$.  Brownian motion on the unit sphere has generator
-$\tfrac12\Delta$ \cite[Thm.~7.2(c)]{PaperI}; since a rotation by $\theta$ is a step of length $\theta/2$ on $S^3$, the time of
+$\tfrac12\Delta$ \cite[Thm.~17.2(c)]{PaperI}; since a rotation by $\theta$ is a step of length $\theta/2$ on $S^3$, the time of
 Paper~I is $t_{\mathrm I}=D_{\mathrm r}t/2$.  The Laplacian on the unit $S^3$ has eigenvalue $-k(k+2)=-4j(j+1)$ on
-harmonics of degree $k=2j$, so a degree-$k$ correlation decays as $e^{-j(j+1)D_{\mathrm r}t}$.  With $k=1$ \cite[Prop.~7.4]{PaperI},
+harmonics of degree $k=2j$, so a degree-$k$ correlation decays as $e^{-j(j+1)D_{\mathrm r}t}$.  With $k=1$ \cite[Prop.~17.4]{PaperI},
 \[
 \mathbb E\,c(\psi_0,\psi_t)=\mathbb E\operatorname{Re}\langle\psi_0|U_t|\psi_0\rangle=e^{-3t_{\mathrm I}/2}=e^{-\frac34D_{\mathrm r}t},
 \]
@@ -12625,7 +12625,7 @@ rigid body, $\tau_j^{-1}=j(j+1)D_{\mathrm r}$ \cite{ex-Debye29,ex-Favro60}, whos
 or light-scattering correlation times) is the standard diagnostic of small-step diffusion.
 \emph{Numbers.}  A Monte Carlo of $4\times10^4$ random walks with $D_{\mathrm r}=1$, $t=0.8$ gives contrast $0.549$
 (formula $0.5488$) and polarisation $0.205$ (formula $0.2019$).
-\emph{Status.}  (a): the decay rates are those of Brownian motion on $S^3$ \cite[Prop.~7.4]{PaperI}, which isotropic small-step
+\emph{Status.}  (a): the decay rates are those of Brownian motion on $S^3$ \cite[Prop.~17.4]{PaperI}, which isotropic small-step
 rotational noise produces.  The ratio $3:8$ is a standard consequence of spinor rotational diffusion;
 every spinor theory gives it, so it does not test the axiom.  Noise-induced dephasing of neutron
 interferometric contrast was studied in \cite{ex-Sulyok10}; we found no experiment comparing
@@ -12658,7 +12658,7 @@ geometric phase shift of $\pi$ by reversing the current in one flipper \cite{ex-
 is half the solid angle $2\pi$ of the lune between the two flip paths.
 \emph{Relation to Paper~I.}  Proposition~\ref{prop:holonomy} and this example concern the Hopf (clock)
 connection on the bundle $S^3\to S^2$ and the Bargmann invariant of the rays, the Hopf images; this is
-what the experiments measure.  The triangle theorem \cite[Thm.~9.9]{PaperI} concerns Levi-Civita spin
+what the experiments measure.  The triangle theorem \cite[Thm.~19.9]{PaperI} concerns Levi-Civita spin
 transport along minimal arcs of $S^3$; its formula has the algebraic form of the Bargmann invariant
 $\operatorname{Tr}(P_1P_2P_3)$ of three spin-$\tfrac12$ states, evaluated on the points $x,y,z$ themselves as unit vectors of
 $\operatorname{span}(x,y,z)$, with $i$ replaced by $\nu\bar x$.  The two are different connections and different invariants, and
@@ -12667,7 +12667,7 @@ $0.1302$, while the Hopf images of $x$ and $y$ coincide and the Bargmann invaria
 They share a half-angle law: the Hopf holonomy of a loop of rays multiplies by the phase of half the
 enclosed solid angle, and the Levi-Civita holonomy of a loop bounding a region of area $A$ in a great
 $2$-sphere is the rotation by $A$, with spin lift $\exp(\tfrac12A\,\nu\bar x_0)$, of spin angle $A$
-\cite[Cor.~9.11(ii), Thm.~9.14]{PaperI}.  In the two conventions the half-angle laws carry opposite signs:
+\cite[Cor.~19.11(ii), Thm.~19.14]{PaperI}.  In the two conventions the half-angle laws carry opposite signs:
 the companion's spin holonomy has the sign of $+\arg B_{123}$, the Hopf holonomy here is $e^{-i\Omega/2}$.  Both papers write $\arg\operatorname{Tr}(P_1P_2P_3)=+\Omega/2$ with the orientation
 stated above.
 \emph{Numbers.}  The octant triangle $n=(e_1,e_2,e_3)$: $B_{123}=(1+i)/4$, $\Omega=\pi/2$, $\arg B_{123}=\pi/4$, geometric phase of the cycle $-\pi/4$.
@@ -13414,9 +13414,9 @@ $x(t)=\bigl(1-t^2+2it\bigr)/(1+t^2)$, $t\in\mathbb Q$, are all of $M_{\mathbb Q}
 truncations $t_n=2^{-n}\lfloor2^n\sqrt2\rfloor$ they form a Cauchy sequence whose limit in $\C$ is
 $(-1+2\sqrt2\,i)/3\notin M_{\mathbb Q}$.  Hence $M_{\mathbb Q}$ is incomplete and totally disconnected, and it is
 isomorphic to neither model of Theorem~\ref{thm:main}.  The completion and the choice of absolute value are the
-existence inputs of \cite[Rem.~10C.20, Prop.~10C.17]{PaperI}.  The parallelogram law, which the kernel space of $c$
+existence inputs of \cite[Rem.~24.20, Prop.~24.17]{PaperI}.  The parallelogram law, which the kernel space of $c$
 satisfies (Proposition~\ref{prop:linear}), fails for $\ell^1$ norms: in the real $\ell^1$ plane its two sides at
-$e_1,e_2$ are $8$ and $4$ \cite[Rem.~5A.19]{PaperI}; the norms that satisfy it are those induced by inner products
+$e_1,e_2$ are $8$ and $4$ \cite[Rem.~9.19]{PaperI}; the norms that satisfy it are those induced by inner products
 \cite{rf:Jordan1935}.
 \end{example}
 
@@ -13425,10 +13425,10 @@ A real $n\times n$ matrix $J$ with $J^2=-\mathbf1$ has $(\det J)^2=\det(-\mathbf
 $M=S^3$ the kernel space $\R\oplus V$ of $\kappa$ has dimension $5$ (Theorem~\ref{thm:main}: rank $\dim M+2$) and
 carries no complex structure; the complex structures of Proposition~\ref{prop:clock} act on the four-dimensional
 kernel space $V$ of $c$, and [Cl] declares the clock of one of them unobservable.  A skew-adjoint unitary $J$ satisfies
-$J^2=-J^*J=-\mathbf1$ \cite[Rem.~10C.20]{PaperI}.  Unbounded orthogonal successors (a full orthonormal basis of
+$J^2=-J^*J=-\mathbf1$ \cite[Rem.~24.20]{PaperI}.  Unbounded orthogonal successors (a full orthonormal basis of
 $\R^n$ exhausts $\R^n$ after $n$ steps; a cyclic successor on $\Z/m\Z$ returns after $m$) and the choice between the
 real and a $p$-adic absolute value ($\lvert2^n\rvert_\infty=2^n$, $\lvert2^n\rvert_2=2^{-n}$) are used by no
-statement of this paper \cite[Rem.~10C.20, Prop.~10C.17]{PaperI}.
+statement of this paper \cite[Rem.~24.20, Prop.~24.17]{PaperI}.
 \end{example}
 
 \begin{example}[{[Comp]} and the effect route to the Born weight]\label{n11:h5}
@@ -13476,7 +13476,7 @@ $\{\lvert+\rangle\langle0\rvert,\lvert+\rangle\langle1\rvert\}$ have the same ef
 Theorem~\ref{thm:instruments}(iii).  Given outcome $0$ with positive weight, a second test $\{P_0,P_1\}$ gives outcome $1$
 with probability $0$ after the first family and $\lvert\langle1\vert{+}\rangle\rvert^2=\tfrac12$ after the second.  So the conditional
 state of Theorem~\ref{thm:instruments}(ii) depends on the Kraus family and not on the effects alone, as in
-\cite[Ex.~5A.21]{PaperI}.  Repeatability does not remove the freedom for rank greater than one: with
+\cite[Ex.~9.20]{PaperI}.  Repeatability does not remove the freedom for rank greater than one: with
 $P=\mathrm{diag}(1,1,0)$ and $U=\mathrm{diag}(1,-1,1)$ the family $\{UP,\mathbf1-P\}$ is an instrument whose outcome $P$
 recurs with certainty, and $UP$ maps the ray of $(1,1,0)$ to the orthogonal ray of $(1,-1,0)$.
 
@@ -13547,7 +13547,7 @@ events depends on the frame.
 $\mathbf1$, or one edge the transport $-\mathbf1$ (and its inverse to the reversed edge) and the others $\mathbf1$.  Both
 preserve the clock field (Hypothesis~F(iii)); the loop products are $1$ and $-1$.  So the fibre data of Hypothesis~F(i),
 (ii) do not determine the holonomy; for abelian gains the gauge classes are given by the fundamental cycle gains of a spanning tree
-\cite[Cor.~0.17]{PaperI}.  The connection is data of Hypothesis~F and, under F$_{\mathrm g}$(a), a dynamical field.
+\cite[Cor.~2.17]{PaperI}.  The connection is data of Hypothesis~F and, under F$_{\mathrm g}$(a), a dynamical field.
 
 \emph{Entropy.}  The qubit channel with Kraus operators $\lvert0\rangle\langle k\rvert$, $k=0,1$, is completely positive
 and trace preserving and maps $\tfrac12\mathbf1$ to $\lvert0\rangle\langle0\rvert$, changing the entropy by $-\ln2$.  The
@@ -13563,9 +13563,9 @@ A comparison on a finite set uses no set-existence axiom beyond finite ones.  Th
 $V_\omega$, in which Infinity fails while Pairing, Union, Power Set, Replacement and choice for finite families hold,
 contain such comparisons; for instance a singleton with value $1$ in $\mathbb F_3$ satisfies (I)--(III) of
 Definition~\ref{n11:a0}.  A finite rank such as $V_5$ ($65536$ elements) also fails Pairing and Power Set at its top rank
-\cite[Rem.~10C.21]{PaperI}.  The continuum statements of this paper use
+\cite[Rem.~24.21]{PaperI}.  The continuum statements of this paper use
 the real numbers through Theorem~\ref{thm:main}; continuum limits of finite comparison data are the programmes
-\cite[Rem.~0.23]{PaperI} and Remark~\ref{ub:programme}.
+\cite[Rem.~2.23]{PaperI} and Remark~\ref{ub:programme}.
 \end{example}
 
 %-------------------------------------------------------------------------------------------------------------
@@ -13591,8 +13591,8 @@ law is
 The symmetric and antisymmetric parts are the images of the complementary idempotents $\tfrac12(1\pm\tau)$, $\tau$ the
 exchange of arguments; they need only $2$ invertible and no inner product.  Under (II) and (III), $\mathsf g$ commutes
 with $\mathsf g^*$, so $\mathsf g_+\mathsf g_-=\mathsf g_-\mathsf g_+$ and $\mathsf g_+^2-\mathsf g_-^2=\mathbf1$
-\cite[Prop.~0.1]{PaperI}.  Under (IV), setting $z=x$ in (III) and (IV) gives $\mathsf g(x,x)=\mathbf1$, and
-$\mathsf g(x,y)=f_x^*f_y$ for fair $f_x$ \cite[Prop.~0.14]{PaperI}.
+\cite[Prop.~2.1]{PaperI}.  Under (IV), setting $z=x$ in (III) and (IV) gives $\mathsf g(x,x)=\mathbf1$, and
+$\mathsf g(x,y)=f_x^*f_y$ for fair $f_x$ \cite[Prop.~2.14]{PaperI}.
 
 \begin{theorem}[Axiom $\Omega$ gives A$_0$]\label{n11:implications}
 Let $(M,\hp\cdot\cdot\cdot,\kappa)$ satisfy Axiom~$\Omega$, realised by Theorem~\ref{thm:main} as the unit sphere of
@@ -13642,11 +13642,11 @@ $\mathsf g'_+=2k-1$, the scalar readout of $k$, and $(\Omega1)$, $(\Omega2)$ hol
 
 \begin{proposition}[independence of the clauses]\label{n11:clauses}\label{n11:h1}
 The quotient of $X$ by equality of both profiles is canonical: $\mathsf g$ descends to it and satisfies (I) there
-\cite[Prop.~10C.16]{PaperI}.  Without the quotient the clauses are independent: on two points, $\mathsf g\equiv1$ satisfies
+\cite[Prop.~24.16]{PaperI}.  Without the quotient the clauses are independent: on two points, $\mathsf g\equiv1$ satisfies
 (II), (III) and violates (I); in $\R$ with the identity involution, off-diagonal values $2,\tfrac12$ satisfy (I), (III) and
 violate (II), and $2,2$ satisfy (I), (II) and violate (III).  Invertibility of $2$ is independent of (I)--(III): over
 $\mathbb F_2$ with the identity involution the one-point model $\mathsf g=1$ satisfies (I)--(III), and both equations
-$2\mathsf g_\pm=\mathsf g\pm\mathsf g^*$ reduce to $0=0$ \cite[Ex.~0.2]{PaperI}; over $\Z/6\Z$, of characteristic $6$,
+$2\mathsf g_\pm=\mathsf g\pm\mathsf g^*$ reduce to $0=0$ \cite[Ex.~2.2]{PaperI}; over $\Z/6\Z$, of characteristic $6$,
 $2\cdot3=0$, so $2$ is not invertible although the characteristic is not $2$.
 \end{proposition}
 \begin{proof}
@@ -13663,16 +13663,16 @@ against $(\Omega2\mathrm b)$.  On two points with unit diagonal, the off-diagona
 ($\varepsilon^2=0$) and $\tfrac54\pm\tfrac34j$ in the split-complex numbers ($j^2=1$), with involution negating the generator,
 satisfy (I)--(III); their antisymmetric parts square to $0$ and to $\tfrac9{16}$, and in the second $\mathsf g_+=\tfrac54>1$.
 In $\mathrm{Cl}_{4,0}$ with reversion the fair element $\tfrac12(1+e_1e_2)(1+e_3e_4)$ has antisymmetric part
-$\tfrac12(e_1e_2+e_3e_4)$, whose square $-\tfrac12+\tfrac12e_1e_2e_3e_4$ is not scalar \cite[Ex.~0.2]{PaperI}.  On three points
+$\tfrac12(e_1e_2+e_3e_4)$, whose square $-\tfrac12+\tfrac12e_1e_2e_3e_4$ is not scalar \cite[Ex.~2.2]{PaperI}.  On three points
 the circle gains $\mathsf g_{01}=\mathsf g_{02}=e^{i\pi/6}$, $\mathsf g_{12}=-1$ (inverses on reversed edges) satisfy (I)--(III)
 and every pairwise bound $\lvert\mathsf g_+\rvert\le1$, but the table of real parts has determinant $-3$, and the chords
 through the first point have total length $\sqrt6-\sqrt2$, less than the chord $2$ between the other two points
-\cite[Ex.~0.27, Rem.~5A.19]{PaperI}.
+\cite[Ex.~2.27, Rem.~9.19]{PaperI}.
 Two-point unit-diagonal tables with $\lvert\mathsf g_+\rvert\le1$ are positive semidefinite (eigenvalues $1\pm\mathsf g_+$), so
 three points are the least number that shows the failure.  Positive semidefiniteness of $\kappa$ and the Euclidean
 structure of Proposition~\ref{prop:linear} are consequences of $(\Omega1)$--$(\Omega3)$ (Theorem~\ref{thm:main}) and are not
 implied by (II), (III); with (IV) and a normalised positive functional the real parts form a Gram matrix
-\cite[Prop.~0.24, Cor.~0.6]{PaperI}.
+\cite[Prop.~2.24, Cor.~2.6]{PaperI}.
 \end{example}
 
 \begin{example}[the composite postulates relative to fixed elementary data]\label{n11:composite}
@@ -13932,7 +13932,7 @@ the cycle $r_1\to r_2\to r_3\to r_1$ along geodesic arcs, $\arg\langle\psi(0)|\p
 Signed solid angles refer to the Bloch map of Proposition~\ref{prop:stereo}; the map $x\mapsto xi\bar x$ used in
 Paper~I differs from it by an orientation-reversing isometry of $S^2$.  Paper~I writes
 $\arg\operatorname{Tr}(P_1P_2P_3)=+\Omega/2$ for Bloch vectors with the same orientation convention; its triangle theorem
-\cite[Thm.~9.9]{PaperI} concerns the Levi-Civita connection of $S^3$, a different connection
+\cite[Thm.~19.9]{PaperI} concerns the Levi-Civita connection of $S^3$, a different connection
 (Example~\ref{ex:pancharatnam}).
 \end{proposition}
 \begin{proof}
@@ -14053,7 +14053,7 @@ S4 & positive residuals enlarge the carrier & derived (one system) & carrier is 
 \textsf{Q3a} & complete readout $\Rightarrow$ effects, Born & derived from C0--C3 and Convention T & Thms.~\ref{thm:born}, \ref{thm:bornN}, \ref{thm:instruments}; Prop.~\ref{prop:effects}\\
 \textsf{Q3b} & successor-kernel equality, instruments, complete positivity & derived from C0--C3 and Convention T & Thm.~\ref{thm:instruments}, Cor.~\ref{cor:clausesQ3}\\
 \textsf{Q4} & product kernel; product histories span; joint effects complete & product kernel derived for clock-read factors from [Bil$_\cL$], [Span], [Loc], [O], C2, [N], C1(b) (Thm.~\ref{thm:oneclock}), or from C0, C1, [Span], and C2 for $N\ge3$ (Thm.~\ref{thm:product}, Cor.~\ref{cor:ampmult}); spanning is the definition of $V_N$; states and joint effects derived from C0--C3 & Cor.~\ref{cor:ampmult}, Prop.~\ref{prop:avg}, Thms.~\ref{thm:comp}, \ref{thm:instruments}\\
-R & finite rank, regularity, effect menu, ancilla positivity & ranks and $C^1$ time derived; effect menu and ancillas derived from C0--C3; regularity of $\kappa$ derived \cite[Thm.~3.11]{PaperI} & Thms.~\ref{thm:main}, \ref{thm:dyn}, \ref{thm:instruments}\\
+R & finite rank, regularity, effect menu, ancilla positivity & ranks and $C^1$ time derived; effect menu and ancillas derived from C0--C3; regularity of $\kappa$ derived \cite[Thm.~6.11]{PaperI} & Thms.~\ref{thm:main}, \ref{thm:dyn}, \ref{thm:instruments}\\
 \bottomrule
 \end{tabular}
 \end{table}
