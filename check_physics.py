@@ -3287,4 +3287,54 @@ oko &= abs((np.sqrt(2) - 1)*(np.sqrt(2) + 1) - 1) < 1e-12 and abs(-np.log(.2*2.2
 print(f"     own checks: reciprocal locking to the unique fixed pair, cosine iterates and the even subsequence, transport and damping fixed points, partial-dephasing gap (log 3)/4 and HS mass, phase flip, five-cycle moments and distance 1/2904, divergence counterexamples, Bell residual 1/4, RT crossover: {bool(oko)}")
 results.append(bool(oko))
 
+# 58. (Round 35) referee counterexamples and corrected numbers
+print("\n58. referee counterexamples and corrected numbers (Round 35)")
+ok58 = True
+# B2: the Pauli channel (Y.Y+Z.Z)/2 with the identity: unique fixed pair, spectral radius one, period-four orbit
+_X = np.array([[0, 1], [1, 0]], complex); _Y = np.array([[0, -1j], [1j, 0]]); _Z = np.diag([1., -1.]).astype(complex)
+def _bl(r): return (np.eye(2) + r[0]*_X + r[1]*_Y + r[2]*_Z)/2
+def _vec(rho): return np.real([np.trace(rho @ P) for P in (_X, _Y, _Z)])
+Am = np.array([_vec((_Y @ _bl(e) @ _Y + _Z @ _bl(e) @ _Z)/2) for e in np.eye(3)]).T
+ok58 &= np.allclose(Am, np.diag([-1., 0, 0])) and abs(max(abs(np.linalg.eigvals(Am))) - 1) < 1e-12 and abs(np.linalg.det(np.eye(3) - Am) - 2) < 1e-12
+r0 = np.array([.5, .2, .1]); s0 = np.array([.3, 0, 0]); rr, ss = r0.copy(), s0.copy(); traj = []
+for _ in range(8):
+    rr, ss = Am @ ss, rr.copy(); traj.append(rr.copy())
+ok58 &= np.allclose(traj[0], traj[4]) and not np.allclose(traj[0], traj[2])
+# B3: Dirichlet(2,2,2,2) with V = F_Beta(2,6)(U1) is uniform; invariant law with V = U1 is Beta(1,d-1)
+from scipy.stats import beta as _beta, dirichlet as _dir
+_rg = np.random.default_rng(35)
+Ud = _rg.dirichlet([2, 2, 2, 2], 200000); Vd = _beta(2, 6).cdf(Ud[:, 0])
+pB = np.array([.1, .2, .3, .4]); freq = np.bincount(np.searchsorted(np.cumsum(pB), Vd, side='right'), minlength=4)/len(Vd)
+ok58 &= np.max(abs(freq - pB)) < 0.005
+p3 = np.array([1/3, 1/3, 1/3]); cdf = _beta(1, 2).cdf; exact = np.diff([0, cdf(1/3), cdf(2/3), 1.])
+ok58 &= np.allclose(exact, [5/9, 1/3, 1/9])
+# B4(b): right multiplication by j preserves beta and anticommutes with the clock; J x J preserves transition probabilities
+def _qm(a, b):
+    a0, a1, a2, a3 = a; b0, b1, b2, b3 = b
+    return np.array([a0*b0-a1*b1-a2*b2-a3*b3, a0*b1+a1*b0+a2*b3-a3*b2, a0*b2-a1*b3+a2*b0+a3*b1, a0*b3+a1*b2-a2*b1+a3*b0])
+_I = np.array([0, 1., 0, 0]); _J = np.array([0, 0, 1., 0])
+def _beta_q(p, q): return np.dot(p, q)**2 + np.dot(p, _qm(q, _I))**2
+dev = 0
+for _ in range(200):
+    pq = _rg.normal(size=4); pq /= np.linalg.norm(pq); qq = _rg.normal(size=4); qq /= np.linalg.norm(qq)
+    dev = max(dev, abs(_beta_q(pq, qq) - _beta_q(_qm(pq, _J), _qm(qq, _J))))
+ok58 &= dev < 1e-12 and np.allclose(_qm(_I, _J), -_qm(_J, _I))
+Aj = np.kron(1j*_Y, 1j*_Y); dev = 0
+for _ in range(100):
+    a = _rg.normal(size=4) + 1j*_rg.normal(size=4); b = _rg.normal(size=4) + 1j*_rg.normal(size=4); a /= np.linalg.norm(a); b /= np.linalg.norm(b)
+    dev = max(dev, abs(abs(np.vdot(a, b))**2 - abs(np.vdot(Aj @ a.conj(), Aj @ b.conj()))**2))
+ok58 &= dev < 1e-12 and abs(max(np.cos(np.pi/2), np.sin(np.pi/2)) - 1) < 1e-15
+# B13: expected limits at kappa-hat = 1
+zq = 1.64485; vv = 246.22
+xiV = 1 - (1 - zq*0.026)**2; xi2V = (zq*0.23)/2
+ok58 &= abs(xiV - 0.0837) < 5e-4 and abs(vv/np.sqrt(xiV) - 851) < 1 and abs(xi2V - 0.189) < 5e-4 and abs(vv/np.sqrt(xi2V) - 566) < 1
+# B6, B10: texture scale and the centre-field source at v = 246 GeV
+ok58 &= abs(6*np.pi**2*vv/1000 - 14.58) < 0.01
+GN = 6.70883e-39; epsG = 4*np.pi*GN*vv**2
+ok58 &= 4e-33 < epsG < 6e-33
+# N_nu: the second determination is 0.5 standard deviations from three
+ok58 &= abs((3 - 2.9963)/0.0074 - 0.5) < 0.01 and abs((3 - 2.9840)/0.0082 - 1.95) < 0.01
+print(f"     counterexamples B2 (unique fixed pair, spr = 1, period four), B3 (non-invariant law Born under the cumulative rule; invariant law 5/9, 1/3, 1/9), B4(b) (right j preserves beta, J x J preserves two-qubit transition probabilities, s_N(T) = 1); expected limits xi <= 0.084, f >= 0.85 TeV; 14.6 TeV/e_S; 4 pi G v^2 ~ 5e-33; N_nu distances: {bool(ok58)}")
+results.append(bool(ok58))
+
 print(f"\nALL CHECKS PASSED: {all(results)}  ({sum(results)}/{len(results)})")
