@@ -4215,7 +4215,7 @@ $d$ by $c$, and take $j=1,2,3$. The maximum rank of
 $\sum_j M_j\otimes N_j$ is at most $\min(3ac,ad,bc)$.
 In the positive range $a\le b$, $c\le d$,
 $a^2+b^2\le3ab$ and $c^2+d^2\le3cd$, equality with $\min(ad,bc)$
-is proved in the companion \cite[Thm.~16.19]{PaperI} (Remark~\ref{ub:bridge}; an independent verification of that proof is in progress; also stated in \cite{obr:leanbridge}); it is cited here. The upper bound follows from the input and
+is proved in the companion \cite[Thm.~16.19]{PaperI}, with a machine-checked proof in the public library (declaration \texttt{D5/S3/Quantum/TensorNetworks/BridgeGraph/QuantumMaxFlowMinCut.lean}, \texttt{result}, frozen and kernel-checked there, not rebuilt for this paper; Remark~\ref{ub:bridge}); it is cited here. The upper bound follows from the input and
 output dimensions and the factorization of each summand through
 $\C^{ac}$ via $(I_a\otimes N_j)(M_j\otimes I_c)$.
 The cone inequalities imply $b<3a$ and $d<3c$, so the exterior
@@ -14125,9 +14125,11 @@ orthogonal and no product vector of $(\C^2)^{\otimes3}$ is orthogonal to all of 
 
 %=====================================================================================
 \section{Tensor-network results used for cap entropies}\label{app:tensor}
-\noindent\emph{Status.}  The ordered-cone attainment, the scalar column Gram and the flat-spectrum obstruction are proved
-in the companion \cite[Thm.~16.19, Thm.~16.20, Prop.~16.22]{PaperI}; an independent verification of those proofs is in
-progress.  The matrix-product-state recovery statements remain library statements of \cite{ub:lean} and are cited
+\noindent\emph{Status.}  The ordered-cone attainment, the scalar column Gram and the two bounds of the flat-spectrum
+obstruction are proved in the companion \cite[Thm.~16.19, Thm.~16.20, Prop.~16.22]{PaperI}, with machine-checked proofs in
+the public library \cite{ub:lean}: frozen declarations whose proofs were checked by the Lean kernel in the library's
+required checks, not rebuilt for this paper (the companion's formalisation section \cite[Sec.~29]{PaperI} lists the
+declarations; the entropy clause of the obstruction is not formalised).  The matrix-product-state recovery statements remain library statements of \cite{ub:lean} and are cited
 (unrefereed), not proved or checked here.  The upper bounds, the counterexamples and the arguments written out in full
 are proved here and checked numerically.  The cut bound
 and its equality criterion are Theorem~\ref{ub:cut}.
@@ -14147,8 +14149,9 @@ $ad$ and $bc$, so $Q_{\max}\le Q_{\min}$. For
  0<a\le b,\quad 0<c\le d,\qquad
  a^2+b^2\le3ab,\quad c^2+d^2\le3cd
 \]
-the companion proves $Q_{\max}=Q_{\min}=\min(ad,bc)$ \cite[Thm.~16.19]{PaperI} (an independent verification of that
-proof is in progress; the same statement is in the Lean library \cite{ub:lean}).  The equality is cited here.
+the companion proves $Q_{\max}=Q_{\min}=\min(ad,bc)$ \cite[Thm.~16.19]{PaperI}, with a machine-checked proof in the public
+library (declaration \texttt{D5/S3/Quantum/TensorNetworks/BridgeGraph/QuantumMaxFlowMinCut.lean}, \texttt{result} \cite{ub:lean}, frozen and kernel-checked there, not rebuilt for this paper).  The equality
+is cited here.
 Under these cone conditions $b<3a$ and $d<3c$. The claimed reverse
 rank bound is the ordered
 width-three case of a bridge conjecture of Gesmundo, Lysikov and
@@ -14188,10 +14191,10 @@ attainable exactly when $2b\le3a$.
 For $2b\le3a$ and $3c\le2d$, each $\lambda>0$ is realised by a
 native $F^\dagger F=\lambda I_{bc}$.
 Conversely $3a<2b$ and a positive scalar column Gram force
-$2c\le d$. These three statements are proved in the companion \cite[Thm.~16.20, Prop.~16.22]{PaperI} (an independent
-verification of those proofs is in progress) and are also library statements of \cite{ub:lean}
-(\texttt{NativeSaturation.native\_saturation\_iff}, \texttt{NativeScalarGram.native\_scalar\_gram\_exists},
-\texttt{NativeRectangularBound.bound}); they are cited here.  For the stronger bound below we give the argument: it uses a common neutral two-plane for
+$2c\le d$. These three statements are proved in the companion \cite[Thm.~16.20, Prop.~16.22]{PaperI}, with machine-checked
+proofs in the public library \cite{ub:lean} (declarations \texttt{NativeSaturation.native\_saturation\_iff},
+\texttt{NativeScalarGram.native\_scalar\_gram\_exists}, \texttt{NativeRectangularBound.bound}; frozen and kernel-checked
+there, not rebuilt for this paper); they are cited here.  For the stronger bound below we give the argument: it uses a common neutral two-plane for
 the Hermitian coefficient kernel of the injectively stacked
 three independent left factors in the regime $3a<2b$. When
 $c>0$ and $b>2a$, one has the stronger $3c\le d$. In this last
