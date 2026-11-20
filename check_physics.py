@@ -3337,4 +3337,19 @@ ok58 &= abs((3 - 2.9963)/0.0074 - 0.5) < 0.01 and abs((3 - 2.9840)/0.0082 - 1.95
 print(f"     counterexamples B2 (unique fixed pair, spr = 1, period four), B3 (non-invariant law Born under the cumulative rule; invariant law 5/9, 1/3, 1/9), B4(b) (right j preserves beta, J x J preserves two-qubit transition probabilities, s_N(T) = 1); expected limits xi <= 0.084, f >= 0.85 TeV; 14.6 TeV/e_S; 4 pi G v^2 ~ 5e-33; N_nu distances: {bool(ok58)}")
 results.append(bool(ok58))
 
+# 59. (Round 36) observer memory as hardware, independence models, coset towers
+print("\n59. vendored module checks (Round 36): check_memory.py, check_independence.py, check_cosets.py")
+for name in ("check_memory", "check_independence", "check_cosets"):
+    spx = importlib.util.spec_from_file_location(name, os.path.join(here, name + ".py"))
+    mx = importlib.util.module_from_spec(spx); buf = io.StringIO()
+    try:
+        with contextlib.redirect_stdout(buf):
+            spx.loader.exec_module(mx)
+            mx.main()
+        okx = buf.getvalue().strip().splitlines()[-1].endswith("True")
+    except BaseException as ex:
+        okx = False; print("error:", repr(ex))
+    print("    ", buf.getvalue().strip().splitlines()[-1] if buf.getvalue().strip() else name)
+    results.append(bool(okx))
+
 print(f"\nALL CHECKS PASSED: {all(results)}  ({sum(results)}/{len(results)})")
