@@ -55,7 +55,7 @@ INV = [
  H("B", "[B]", "I", "reading", r"Thm.~\ref{thm:readings}", "input", "math",
    r"every class has exactly one orthogonal class", [r"\[B\]"],
    r"\emph{Binary states.}  Every class of states has exactly one orthogonal class ($s_K=0$).  Under [L] it is equivalent to [Cl] with [NT] (Proposition~\ref{prop:clockB})."),
- H("Cl", "[Cl]", "I", "reading", r"Sec.~\ref{sec:readings}", r"input; a reformulation under [Ph] (Cor.~\ref{cor:clbridge})", "math",
+ H("Cl", "[Cl]", "I", "reading", r"Sec.~\ref{sec:readings}", r"input; a reformulation under Ph(a) (Cor.~\ref{cor:clbridge})", "math",
    r"the unobservable group contains a clock", [r"\[Cl\]"],
    r"\emph{Unobservable clock.}  The unobservable group of an elementary system contains a clock: for a closed system the phase of its own clock is not observable.  An input, not derived from the axiom; under the phase bridge [Ph] it is equivalent to a restricted clause of [Ph] (Corollary~\ref{cor:clbridge})."),
  H("NT", "[NT]", "I", "reading", r"Sec.~\ref{sec:readings}", "input", "math",
@@ -103,7 +103,7 @@ INV = [
    r"hypotheses of the uniqueness of the composite Born weight", [r"thm:bornN\}\(iii\)", r"w=f\(\\beta"],
    None),
  # ---------------- Part II
- H("Ph", "[Ph]", "II", "hypothesis", r"Sec.~\ref{hyp:Ph}", "hypothesis; [Cl] is a reformulation under it", "math",
+ H("Ph", "[Ph]", "II", "hypothesis", r"Sec.~\ref{hyp:Ph}", "hypothesis; under Ph(a), [Cl] is equivalent to the restricted Ph(b)", "math",
    r"complex composite reading built on one clock; (b) restricted to transports commuting with $T$", br("Ph") + [r"Ph\((a|b)\)"]),
  H("U", "U", "II", "hypothesis", r"Sec.~\ref{hyp:U}", "physical reading only; no statement uses it", "open",
    r"physical specification of a closed-universe state", br("U")),
@@ -166,13 +166,13 @@ INV = [
    r"Pati--Salam group, multiplets, breaking, equal couplings (i)--(v)", br("G") + [r"\bG\((i|ii|iii|iv|v)\)", r"\[G\]\((i|v)"]),
  H("GR", "GR", "IV", "hypothesis", r"Sec.~\ref{hyp:GR}", "hypothesis", "std",
    r"Einstein's equations with a source", br("GR")),
- H("Br", "Br", "IV", "hypothesis", r"Sec.~\ref{hyp:Br}", "hypothesis (group, counting and flux statements derived)", "std",
+ H("Br", "Br", "IV", "hypothesis", r"Sec.~\ref{hyp:Br}", "hypothesis (group, counting and flux statements derived; the observer-basis clause (v) is a reading, class open)", "std",
    r"five symmetry-breaking geometrisations: Cartan spacetime, electroweak, chiral, crystal and superconductor, observer bases",
    br("Br")),
  H("Oc", "Oc", "IV", "hypothesis", r"Sec.~\ref{hyp:Oc}", "model hypothesis; inter-level map not specified", "open",
    r"exterior-degree recursion between levels, particle--field readings, Standard Model degree assignments",
    br("Oc")),
- H("Tw", "Tw", "IV", "hypothesis", r"Sec.~\ref{hyp:Tw}", "model hypothesis; closure $L_5\to L_0$ not supplied", "open",
+ H("Tw", "Tw", "IV", "hypothesis", r"Sec.~\ref{hyp:Tw}", r"model hypothesis; closure $L_5\to L_0$ not supplied", "open",
    r"six-level concept tower $L_0$--$L_5$ with a proposed return through the spinor double cover",
    br("Tw")),
  H("Lr", "Lr", "IV", "hypothesis", r"Sec.~\ref{hyp:Lr}", "model hypothesis", "open",
@@ -216,7 +216,7 @@ CONJ = [
  ("ub:uniform", "entropy gap with increasing bond dimensions", "IV"),
  ("gn:conjecture", "a comparison-determined index", "IV"),
  ("cr:conjecture", "a comparison regulator for the trace", "IV"),
- ("n12:inference-conj", "lower sagitta cost and intermediate factual accuracy (no empirical estimate)", "IV"),
+ ("n12:inference-conj", "lower sagitta cost and intermediate factual accuracy (no empirical estimate)", "IV", "test"),
 ]
 PROB = [("conj:somixing", "invariant sampling from apparatus dynamics", "II"),
  ("n12:gravproblem", "gravitational dynamics from comparison costs", "IV"),
@@ -242,8 +242,8 @@ PROG = [
  ("ob:fluidprogramme", "fluid closure under restricted observation", "App."),
  ("n11:programme", "records in spacetime, timeless clocks and evaporation", "App."),
 ]
-for lab, title, part in CONJ:
-    INV.append(H(lab, r"Conj.~\ref{%s}" % lab, part, "conjecture", r"Conj.~\ref{%s}" % lab, "conjecture", "math", title,
+for lab, title, part, *kl in CONJ:
+    INV.append(H(lab, r"Conj.~\ref{%s}" % lab, part, "conjecture", r"Conj.~\ref{%s}" % lab, "conjecture", kl[0] if kl else "math", title,
                  [re.escape(r"\ref{%s}" % lab)]))
 for lab, title, part in PROB:
     INV.append(H(lab, r"Problem~\ref{%s}" % lab, part, "problem", r"Problem~\ref{%s}" % lab, "open problem", "open", title,
@@ -258,7 +258,7 @@ for lab, title, part in PROG:
 SCOPE = [
  (r"Carrier $S^1$ or $S^3$; kernel; round-trip law $\Leftrightarrow$ two-readout determinacy; linear space $\R^4$; clocks are the complex structures commuting with $\cL$", r"theorem (Paper I; Thm.~\ref{thm:trd})", ["NC"]),
  (r"States are clock orbits; weight $\beta$; real and quaternionic readings", r"theorem under [L], [B] or [L], [Cl], [NT] (Prop.~\ref{prop:clockB}); exponent $2$ with [W], [Comp], [N] (Thm.~\ref{thm:readings})", ["L", "W", "B", "Cl", "NT", "N", "Comp", "T"]),
- (r"[Cl] and the phase bridge", r"reformulation under [Ph] (Cor.~\ref{cor:clbridge}); unrestricted Ph(b) contradicts [NT] (Rem.~\ref{rem:clreal})", ["Ph", "Cl"]),
+ (r"[Cl] and the phase bridge", r"reformulation under Ph(a) (Cor.~\ref{cor:clbridge}); unrestricted Ph(b) contradicts [NT] (Rem.~\ref{rem:clreal})", ["Ph", "Cl"]),
  (r"Born weight, symmetries, $\Theta^2=-1$, Schr\"odinger evolution, uncertainty equality (one system)", r"theorem; probability reading [T]; $H$ free", ["T"]),
  (r"One clock, tensor product, entanglement, Born weights and instruments for composites", r"theorem for clock-read factors (Thm.~\ref{thm:oneclock}); second route Thm.~\ref{thm:product}; uniqueness by Gleason (Thm.~\ref{thm:bornN})", ["Bil", "BilL", "Span", "Loc", "O", "C0", "C1", "C2", "C3", "Gle"]),
  (r"Sub-structures of every dimension; exchange sector", r"theorem (Prop.~\ref{prop:rtclosed}, Cor.~\ref{cor:substructure}); as systems under [Sub]", ["Sub"]),
@@ -287,7 +287,7 @@ SCOPE = [
  (r"Gate commutator against triangle area ($\pi/3$ against $\pi/2$ at a quarter turn); entangling pairs; orientation parity",
   r"theorem (Props.~\ref{n12:gates}, \ref{n12:parity}); refuted readings (Rems.~\ref{n12:ref-area}, \ref{n12:ref-entangle}, \ref{n12:ref-legs}); concept tower Tw",
   ["Tw"]),
- (r"Composition of interaction signs: four counterexamples to additive cell sources; spin-two universality; force ratios",
+ (r"Composition of interaction signs: four counterexamples to implications from positive cell costs; spin-two universality; force ratios",
   r"theorem (Rem.~\ref{n12:ref-additive}); cited (Rem.~\ref{n12:spin-two}); open problem",
   ["n12:gravproblem"]),
  (r"Sagitta action, Born-surprisal series, Jensen bound, free fixed-endpoint minimisers, Choi Fisher metric",
@@ -333,7 +333,7 @@ FALSIFY = [
  (r"Coupling ratios from the total space (KK, Sn)", "math", r"selection by the structure refuted; $g'/g$ open"),
  (r"Triality count", "math", r"the count three and the obstruction; generations not obtained"),
  (r"Generation count", "data", r"an input; $N_\nu=2.9840\pm0.0082$ and $2.9963\pm0.0074$ count light $Z$-coupled neutrinos only"),
- (r"Gravity from cap entanglement", "open", r"conditional on Eq; no test until Eq is derived"),
+ (r"Linearised Einstein equation (Jacobson, under Eq)", "open", r"conditional on Eq; no test until Eq is derived"),
  (r"Clock rates (Ck) and the lapse (Gl)", "open", r"a model identification and a programme"),
  (r"Observers, records, horizons", "math", r"locking, channel and record statements; no consensus of estimates in general (Example~\ref{ob:cosine}); no temperature from a finite region (Example~\ref{ob:curvature})"),
  (r"Codes and computation", "std", r"standard quantum information; nothing distinguishing"),
@@ -378,7 +378,7 @@ def build(src):
     # where used
     for h in INV:
         used = []
-        pats = [re.compile(t) for t in h["tokens"]]
+        pats = [re.compile((r"(?<![A-Za-z0-9}])" if t.startswith(r"\[") else "") + t) for t in h["tokens"]]
         for i, l in enumerate(lines):
             if excluded(i) or "%" == l[:1]:
                 continue
@@ -476,6 +476,9 @@ def check(src):
     for lab in re.findall(r"\\label\{([^}]*programme[^}]*)\}", src):
         if lab not in inv_hyp:
             errs.append("programme not in inventory: " + lab)
+    for lab in re.findall(r"\\begin\{problem\}(?:\[[^\]]*\])?\s*\\label\{([^}]*)\}", src):
+        if lab not in inv_hyp:
+            errs.append("labelled open problem not in inventory: " + lab)
     in_scope = {k for _, _, ks in SCOPE for k in ks}
     for h in INV:
         if h["key"] not in in_scope:
